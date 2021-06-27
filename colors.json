@@ -1,0 +1,28 @@
+{
+    "wallpaper": "~/mpv-shot0003.jpg",
+    "alpha": "60",
+
+    "special": {
+        "background": "#ffffff",
+        "foreground": "#000000",
+        "cursor": "#000000"
+    },
+    "colors": {
+        "color0": "#20282a",
+        "color1": "#de3a5d",
+        "color2": "#a7dc02",
+        "color3": "#f48a23",
+        "color4": "#56bcea",
+        "color5": "#a470e7",
+        "color6": "#53e0ac",
+        "color7": "#ececec",
+        "color8": "#000000",
+        "color9": "#de3a5d",
+        "color10": "#a7dc02",
+        "color11": "#f48a23",
+        "color12": "#56bcea",
+        "color13": "#a470e7",
+        "color14": "#53e0ac",
+        "color15": "#ffffff"
+    }
+}

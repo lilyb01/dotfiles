@@ -1,0 +1,28 @@
+{
+    "wallpaper": "/home/lily/.config/wpg/wallpapers/EcQHDWbVcAARlDF.jpg",
+    "alpha": "100",
+
+    "special": {
+        "background": "#ffffff",
+        "foreground": "#000000",
+        "cursor": "#000000"
+    },
+    "colors": {
+        "color0": "#1f0f1e",
+        "color1": "#2F4C83",
+        "color2": "#786082",
+        "color3": "#947985",
+        "color4": "#AC9699",
+        "color5": "#C6B4B4",
+        "color6": "#CBBEC1",
+        "color7": "#e4dfdf",
+        "color8": "#9f9c9c",
+        "color9": "#2F4C83",
+        "color10": "#786082",
+        "color11": "#947985",
+        "color12": "#AC9699",
+        "color13": "#C6B4B4",
+        "color14": "#CBBEC1",
+        "color15": "#e4dfdf"
+    }
+}

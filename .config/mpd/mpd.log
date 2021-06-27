@@ -1,0 +1,820 @@
+Oct 25 17:06 : errno: Failed to open /home/muffin/.config/mpd/mpd.state: No such file or directory
+Oct 25 17:06 : errno: Failed to stat /home/muffin/music: No such file or directory
+Oct 25 17:06 : avahi: Service 'Music Player' successfully established.
+Oct 25 17:06 : client: [0] opened from [::1]:59858
+Oct 25 17:06 : alsa_mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 25 17:06 : client: [0] closed
+Oct 25 17:06 : client: [1] opened from [::1]:59860
+Oct 25 17:06 : client: [1] closed
+Oct 25 17:06 : client: [2] opened from [::1]:59862
+Oct 25 17:06 : client: [2] closed
+Oct 25 17:06 : client: [3] opened from [::1]:59864
+Oct 25 17:06 : client: [3] closed
+Oct 25 17:07 : client: [4] opened from [::1]:59866
+Oct 25 17:07 : client: [4] closed
+Oct 25 17:07 : client: [5] opened from [::1]:59870
+Oct 25 17:07 : client: [5] closed
+Oct 25 17:07 : client: [6] opened from [::1]:59872
+Oct 25 17:07 : client: [6] closed
+Oct 25 17:07 : client: [7] opened from [::1]:59874
+Oct 25 17:07 : client: [7] closed
+Oct 25 17:07 : client: [8] opened from [::1]:59876
+Oct 25 17:07 : client: [8] closed
+Oct 25 17:07 : client: [9] opened from [::1]:59878
+Oct 25 17:07 : client: [9] closed
+Oct 25 17:07 : client: [10] opened from [::1]:59884
+Oct 25 17:07 : client: [10] closed
+Oct 25 17:07 : client: [11] opened from [::1]:59886
+Oct 25 17:07 : client: [11] closed
+Oct 25 17:07 : client: [12] opened from [::1]:59888
+Oct 25 17:07 : client: [12] closed
+Oct 25 17:07 : client: [13] opened from [::1]:59890
+Oct 25 17:07 : client: [13] closed
+Oct 25 17:08 : client: [14] opened from [::1]:59892
+Oct 25 17:08 : client: [14] closed
+Oct 25 17:08 : client: [15] opened from [::1]:59894
+Oct 25 17:08 : client: [15] closed
+Oct 25 17:08 : client: [16] opened from [::1]:59896
+Oct 25 17:08 : client: [16] closed
+Oct 25 17:08 : client: [17] opened from [::1]:59898
+Oct 25 17:08 : client: [17] closed
+Oct 25 17:08 : client: [18] opened from [::1]:59900
+Oct 25 17:08 : client: [18] closed
+Oct 25 17:08 : client: [19] opened from [::1]:59902
+Oct 25 17:08 : client: [19] closed
+Oct 25 17:08 : client: [20] opened from [::1]:59904
+Oct 25 17:08 : client: [20] closed
+Oct 25 17:08 : client: [21] opened from [::1]:59908
+Oct 25 17:08 : client: [21] closed
+Oct 25 17:08 : client: [22] opened from [::1]:59914
+Oct 25 17:08 : client: [22] closed
+Oct 25 17:08 : client: [23] opened from [::1]:59916
+Oct 25 17:08 : client: [23] closed
+Oct 25 17:09 : client: [24] opened from [::1]:59918
+Oct 25 17:09 : client: [24] closed
+Oct 25 17:09 : client: [25] opened from [::1]:59922
+Oct 25 17:09 : client: [25] closed
+Oct 25 17:09 : client: [26] opened from [::1]:59954
+Oct 25 17:09 : client: [26] closed
+Oct 25 17:09 : client: [27] opened from [::1]:59956
+Oct 25 17:09 : client: [27] closed
+Oct 25 17:09 : client: [28] opened from [::1]:59958
+Oct 25 17:09 : client: [28] closed
+Oct 25 17:09 : client: [29] opened from [::1]:59960
+Oct 25 17:09 : client: [29] closed
+Oct 25 17:09 : client: [30] opened from [::1]:59962
+Oct 25 17:09 : client: [30] closed
+Oct 25 17:09 : client: [31] opened from [::1]:59964
+Oct 25 17:09 : client: [31] closed
+Oct 25 17:09 : client: [32] opened from [::1]:59966
+Oct 25 17:09 : client: [32] closed
+Oct 25 17:09 : client: [33] opened from [::1]:59968
+Oct 25 17:09 : client: [33] closed
+Oct 25 17:10 : client: [34] opened from [::1]:59970
+Oct 25 17:10 : client: [34] closed
+Oct 25 17:10 : client: [35] opened from [::1]:59972
+Oct 25 17:10 : client: [35] closed
+Oct 25 17:10 : client: [36] opened from [::1]:59974
+Oct 25 17:10 : client: [36] closed
+Oct 25 17:10 : avahi: Client Disconnected, will reconnect shortly
+Oct 25 17:10 : avahi: Could not reconnect: An unexpected D-Bus error occurred
+Oct 25 18:14 : avahi: Service 'Music Player' successfully established.
+Oct 25 18:14 : client: [0] opened from [::1]:59410
+Oct 25 18:14 : alsa_mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 25 18:14 : client: [0] closed
+Oct 25 18:14 : client: [1] opened from [::1]:59412
+Oct 25 18:14 : client: [1] closed
+Oct 25 18:14 : client: [2] opened from [::1]:59414
+Oct 25 18:14 : client: [2] closed
+Oct 25 18:14 : client: [3] opened from [::1]:59416
+Oct 25 18:14 : client: [3] closed
+Oct 25 18:14 : client: [4] opened from [::1]:59418
+Oct 25 18:14 : client: [4] closed
+Oct 25 18:14 : client: [5] opened from [::1]:59420
+Oct 25 18:14 : client: [5] closed
+Oct 25 18:14 : client: [6] opened from [::1]:59422
+Oct 25 18:14 : client: [6] closed
+Oct 25 18:14 : client: [7] opened from [::1]:59424
+Oct 25 18:14 : client: [7] closed
+Oct 25 18:15 : client: [8] opened from [::1]:59426
+Oct 25 18:15 : client: [8] closed
+Oct 25 18:15 : client: [9] opened from [::1]:59428
+Oct 25 18:15 : client: [9] closed
+Oct 25 18:15 : client: [10] opened from [::1]:59430
+Oct 25 18:15 : client: [10] closed
+Oct 25 18:15 : client: [11] opened from [::1]:59432
+Oct 25 18:15 : client: [11] closed
+Oct 25 18:15 : client: [12] opened from [::1]:59434
+Oct 25 18:15 : client: [12] closed
+Oct 25 18:15 : client: [13] opened from [::1]:59436
+Oct 25 18:15 : client: [13] closed
+Oct 25 18:15 : client: [14] opened from [::1]:59440
+Oct 25 18:15 : client: [14] closed
+Oct 25 18:15 : client: [15] opened from [::1]:59442
+Oct 25 18:15 : client: [15] closed
+Oct 25 18:15 : client: [16] opened from [::1]:59444
+Oct 25 18:15 : client: [16] closed
+Oct 25 18:15 : client: [17] opened from [::1]:59446
+Oct 25 18:15 : client: [17] closed
+Oct 25 18:16 : client: [18] opened from [::1]:59452
+Oct 25 18:16 : client: [18] closed
+Oct 25 18:16 : client: [19] opened from [::1]:59458
+Oct 25 18:16 : client: [19] closed
+Oct 25 18:16 : client: [20] opened from [::1]:59464
+Oct 25 18:16 : client: [20] closed
+Oct 25 18:16 : client: [21] opened from [::1]:59466
+Oct 25 18:16 : client: [21] closed
+Oct 25 18:16 : client: [22] opened from [::1]:59468
+Oct 25 18:16 : client: [22] closed
+Oct 25 18:16 : client: [23] opened from [::1]:59470
+Oct 25 18:16 : client: [23] closed
+Oct 25 18:16 : client: [24] opened from [::1]:59472
+Oct 25 18:16 : client: [24] closed
+Oct 25 18:16 : client: [25] opened from [::1]:59474
+Oct 25 18:16 : client: [25] closed
+Oct 25 18:16 : client: [26] opened from [::1]:59476
+Oct 25 18:16 : client: [26] closed
+Oct 25 18:16 : client: [27] opened from [::1]:59478
+Oct 25 18:16 : client: [27] closed
+Oct 25 18:17 : client: [28] opened from [::1]:59480
+Oct 25 18:17 : client: [28] closed
+Oct 25 18:17 : client: [29] opened from [::1]:59482
+Oct 25 18:17 : client: [29] closed
+Oct 25 18:17 : client: [30] opened from [::1]:59488
+Oct 25 18:17 : client: [30] closed
+Oct 25 18:17 : client: [31] opened from [::1]:59490
+Oct 25 18:17 : client: [31] closed
+Oct 25 18:17 : client: [32] opened from [::1]:59492
+Oct 25 18:17 : client: [32] closed
+Oct 25 18:17 : client: [33] opened from [::1]:59494
+Oct 25 18:17 : client: [33] closed
+Oct 25 18:17 : client: [34] opened from [::1]:59496
+Oct 25 18:17 : client: [34] closed
+Oct 25 18:17 : client: [35] opened from [::1]:59498
+Oct 25 18:17 : client: [35] closed
+Oct 25 18:17 : client: [36] opened from [::1]:59500
+Oct 25 18:17 : client: [36] closed
+Oct 25 18:17 : client: [37] opened from [::1]:59502
+Oct 25 18:17 : client: [37] closed
+Oct 25 18:18 : client: [38] opened from [::1]:59506
+Oct 25 18:18 : client: [38] closed
+Oct 25 18:18 : client: [39] opened from [::1]:59508
+Oct 25 18:18 : client: [39] closed
+Oct 25 18:18 : client: [40] opened from [::1]:59510
+Oct 25 18:18 : client: [40] closed
+Oct 25 18:18 : client: [41] opened from [::1]:59512
+Oct 25 18:18 : client: [41] closed
+Oct 25 18:18 : client: [42] opened from [::1]:59514
+Oct 25 18:18 : client: [42] closed
+Oct 25 18:18 : client: [43] opened from [::1]:59516
+Oct 25 18:18 : client: [43] closed
+Oct 25 18:18 : client: [44] opened from [::1]:59518
+Oct 25 18:18 : client: [44] closed
+Oct 25 18:18 : client: [45] opened from [::1]:59520
+Oct 25 18:18 : client: [45] closed
+Oct 25 18:18 : client: [46] opened from [::1]:59522
+Oct 25 18:18 : client: [46] closed
+Oct 25 18:18 : client: [47] opened from [::1]:59524
+Oct 25 18:18 : client: [47] closed
+Oct 25 18:19 : client: [48] opened from [::1]:59526
+Oct 25 18:19 : client: [48] closed
+Oct 25 18:19 : client: [49] opened from [::1]:59528
+Oct 25 18:19 : client: [49] closed
+Oct 25 18:19 : client: [50] opened from [::1]:59530
+Oct 25 18:19 : client: [50] closed
+Oct 25 18:19 : client: [51] opened from [::1]:59532
+Oct 25 18:19 : client: [51] closed
+Oct 25 18:19 : client: [52] opened from [::1]:59534
+Oct 25 18:19 : client: [52] closed
+Oct 25 18:19 : client: [53] opened from [::1]:59540
+Oct 25 18:19 : client: [53] closed
+Oct 25 18:19 : client: [54] opened from [::1]:59542
+Oct 25 18:19 : client: [54] closed
+Oct 25 18:19 : client: [55] opened from [::1]:59544
+Oct 25 18:19 : client: [55] closed
+Oct 25 18:19 : client: [56] opened from [::1]:59546
+Oct 25 18:19 : client: [56] closed
+Oct 25 18:19 : client: [57] opened from [::1]:59548
+Oct 25 18:19 : client: [57] closed
+Oct 25 18:20 : client: [58] opened from [::1]:59550
+Oct 25 18:20 : client: [58] closed
+Oct 25 18:20 : client: [59] opened from [::1]:59552
+Oct 25 18:20 : client: [59] closed
+Oct 25 18:20 : client: [60] opened from [::1]:59554
+Oct 25 18:20 : client: [60] closed
+Oct 25 18:20 : client: [61] opened from [::1]:59556
+Oct 25 18:20 : client: [61] closed
+Oct 25 18:20 : client: [62] opened from [::1]:59558
+Oct 25 18:20 : client: [62] closed
+Oct 25 18:20 : client: [63] opened from [::1]:59560
+Oct 25 18:20 : client: [63] closed
+Oct 25 18:20 : client: [64] opened from [::1]:59564
+Oct 25 18:20 : client: [64] closed
+Oct 25 18:20 : client: [65] opened from [::1]:59566
+Oct 25 18:20 : client: [65] closed
+Oct 25 18:20 : client: [66] opened from [::1]:59572
+Oct 25 18:20 : client: [66] closed
+Oct 25 18:20 : client: [67] opened from [::1]:59574
+Oct 25 18:20 : client: [67] closed
+Oct 25 18:21 : client: [68] opened from [::1]:59578
+Oct 25 18:21 : client: [68] closed
+Oct 25 18:21 : client: [69] opened from [::1]:59580
+Oct 25 18:21 : client: [69] closed
+Oct 25 18:21 : client: [70] opened from [::1]:59582
+Oct 25 18:21 : client: [70] closed
+Oct 25 18:21 : client: [71] opened from [::1]:59584
+Oct 25 18:21 : client: [71] closed
+Oct 25 18:21 : client: [72] opened from [::1]:59586
+Oct 25 18:21 : client: [72] closed
+Oct 25 18:21 : client: [73] opened from [::1]:59588
+Oct 25 18:21 : client: [73] closed
+Oct 25 18:21 : client: [74] opened from [::1]:59590
+Oct 25 18:21 : client: [74] closed
+Oct 25 18:21 : client: [75] opened from [::1]:59592
+Oct 25 18:21 : client: [75] closed
+Oct 25 18:21 : client: [76] opened from [::1]:59594
+Oct 25 18:21 : client: [76] closed
+Oct 25 18:21 : client: [77] opened from [::1]:59596
+Oct 25 18:21 : client: [77] closed
+Oct 25 18:22 : client: [78] opened from [::1]:59598
+Oct 25 18:22 : client: [78] closed
+Oct 25 18:22 : client: [79] opened from [::1]:59600
+Oct 25 18:22 : client: [79] closed
+Oct 25 18:22 : client: [80] opened from [::1]:59602
+Oct 25 18:22 : client: [80] closed
+Oct 25 18:22 : client: [81] opened from [::1]:59604
+Oct 25 18:22 : client: [81] closed
+Oct 25 18:22 : client: [82] opened from [::1]:59606
+Oct 25 18:22 : client: [82] closed
+Oct 25 18:22 : client: [83] opened from [::1]:59608
+Oct 25 18:22 : client: [83] closed
+Oct 25 18:22 : client: [84] opened from [::1]:59610
+Oct 25 18:22 : client: [84] closed
+Oct 25 18:22 : client: [85] opened from [::1]:59612
+Oct 25 18:22 : client: [85] closed
+Oct 25 18:22 : client: [86] opened from [::1]:59614
+Oct 25 18:22 : client: [86] closed
+Oct 25 18:22 : client: [87] opened from [::1]:59616
+Oct 25 18:22 : client: [87] closed
+Oct 25 18:23 : client: [88] opened from [::1]:59618
+Oct 25 18:23 : client: [88] closed
+Oct 25 18:23 : client: [89] opened from [::1]:59620
+Oct 25 18:23 : client: [89] closed
+Oct 25 18:23 : client: [90] opened from [::1]:59622
+Oct 25 18:23 : client: [90] closed
+Oct 25 18:23 : client: [91] opened from [::1]:59624
+Oct 25 18:23 : client: [91] closed
+Oct 25 18:23 : client: [92] opened from [::1]:59626
+Oct 25 18:23 : client: [92] closed
+Oct 25 18:23 : client: [93] opened from [::1]:59628
+Oct 25 18:23 : client: [93] closed
+Oct 25 18:23 : client: [94] opened from [::1]:59630
+Oct 25 18:23 : client: [94] closed
+Oct 25 18:23 : client: [95] opened from [::1]:59634
+Oct 25 18:23 : client: [95] closed
+Oct 25 18:23 : client: [96] opened from [::1]:59642
+Oct 25 18:23 : client: [96] closed
+Oct 25 18:23 : client: [97] opened from [::1]:59644
+Oct 25 18:23 : client: [97] closed
+Oct 25 18:24 : client: [98] opened from [::1]:59646
+Oct 25 18:24 : client: [98] closed
+Oct 25 18:24 : client: [99] opened from [::1]:59648
+Oct 25 18:24 : client: [99] closed
+Oct 25 18:24 : client: [100] opened from [::1]:59650
+Oct 25 18:24 : client: [100] closed
+Oct 25 18:24 : client: [101] opened from [::1]:59652
+Oct 25 18:24 : client: [101] closed
+Oct 25 18:24 : client: [102] opened from [::1]:59654
+Oct 25 18:24 : client: [102] closed
+Oct 25 18:24 : client: [103] opened from [::1]:59656
+Oct 25 18:24 : client: [103] closed
+Oct 25 18:24 : client: [104] opened from [::1]:59658
+Oct 25 18:24 : client: [104] closed
+Oct 25 18:24 : client: [105] opened from [::1]:59660
+Oct 25 18:24 : client: [105] closed
+Oct 25 18:24 : client: [106] opened from [::1]:59662
+Oct 25 18:24 : client: [106] closed
+Oct 25 18:24 : client: [107] opened from [::1]:59664
+Oct 25 18:24 : client: [107] closed
+Oct 25 18:25 : client: [108] opened from [::1]:59666
+Oct 25 18:25 : client: [108] closed
+Oct 25 18:25 : client: [109] opened from [::1]:59668
+Oct 25 18:25 : client: [109] closed
+Oct 25 18:25 : client: [110] opened from [::1]:59670
+Oct 25 18:25 : client: [110] closed
+Oct 25 18:25 : client: [111] opened from [::1]:59672
+Oct 25 18:25 : client: [111] closed
+Oct 25 18:25 : client: [112] opened from [::1]:59674
+Oct 25 18:25 : client: [112] closed
+Oct 25 18:25 : client: [113] opened from [::1]:59676
+Oct 25 18:25 : client: [113] closed
+Oct 25 18:25 : client: [114] opened from [::1]:59680
+Oct 25 18:25 : client: [114] closed
+Oct 25 18:25 : client: [115] opened from [::1]:59682
+Oct 25 18:25 : client: [115] closed
+Oct 25 18:25 : client: [116] opened from [::1]:59684
+Oct 25 18:25 : client: [116] closed
+Oct 25 18:25 : client: [117] opened from [::1]:59690
+Oct 25 18:25 : client: [117] closed
+Oct 25 18:26 : client: [118] opened from [::1]:59692
+Oct 25 18:26 : client: [118] closed
+Oct 25 18:26 : client: [119] opened from [::1]:59694
+Oct 25 18:26 : client: [119] closed
+Oct 25 18:26 : client: [120] opened from [::1]:59696
+Oct 25 18:26 : client: [120] closed
+Oct 25 18:26 : client: [121] opened from [::1]:59698
+Oct 25 18:26 : client: [121] closed
+Oct 25 18:26 : client: [122] opened from [::1]:59700
+Oct 25 18:26 : client: [122] closed
+Oct 25 18:26 : client: [123] opened from [::1]:59702
+Oct 25 18:26 : client: [123] closed
+Oct 25 18:26 : client: [124] opened from [::1]:59704
+Oct 25 18:26 : client: [124] closed
+Oct 25 18:26 : client: [125] opened from [::1]:59706
+Oct 25 18:26 : client: [125] closed
+Oct 25 18:26 : client: [126] opened from [::1]:59708
+Oct 25 18:26 : client: [126] closed
+Oct 25 18:26 : client: [127] opened from [::1]:59710
+Oct 25 18:26 : client: [127] closed
+Oct 25 18:27 : client: [128] opened from [::1]:59712
+Oct 25 18:27 : client: [128] closed
+Oct 25 18:27 : client: [129] opened from [::1]:59714
+Oct 25 18:27 : client: [129] closed
+Oct 25 18:27 : client: [130] opened from [::1]:59716
+Oct 25 18:27 : client: [130] closed
+Oct 25 18:27 : client: [131] opened from [::1]:59720
+Oct 25 18:27 : client: [131] closed
+Oct 25 18:27 : client: [132] opened from [::1]:59722
+Oct 25 18:27 : client: [132] closed
+Oct 25 18:27 : client: [133] opened from [::1]:59724
+Oct 25 18:27 : client: [133] closed
+Oct 25 18:27 : client: [134] opened from [::1]:59726
+Oct 25 18:27 : client: [134] closed
+Oct 25 18:27 : client: [135] opened from [::1]:59728
+Oct 25 18:27 : client: [135] closed
+Oct 25 18:27 : client: [136] opened from [::1]:59730
+Oct 25 18:27 : client: [136] closed
+Oct 25 18:27 : client: [137] opened from [::1]:59732
+Oct 25 18:27 : client: [137] closed
+Oct 25 18:28 : client: [138] opened from [::1]:59734
+Oct 25 18:28 : client: [138] closed
+Oct 25 18:28 : client: [139] opened from [::1]:59736
+Oct 25 18:28 : client: [139] closed
+Oct 25 18:28 : client: [140] opened from [::1]:59738
+Oct 25 18:28 : client: [140] closed
+Oct 25 18:28 : client: [141] opened from [::1]:59740
+Oct 25 18:28 : client: [141] closed
+Oct 25 18:28 : client: [142] opened from [::1]:59742
+Oct 25 18:28 : client: [142] closed
+Oct 25 18:28 : client: [143] opened from [::1]:59744
+Oct 25 18:28 : client: [143] closed
+Oct 25 18:28 : client: [144] opened from [::1]:59746
+Oct 25 18:28 : client: [144] closed
+Oct 25 18:28 : client: [145] opened from [::1]:59748
+Oct 25 18:28 : client: [145] closed
+Oct 25 18:28 : client: [146] opened from [::1]:59750
+Oct 25 18:28 : client: [146] closed
+Oct 25 18:28 : client: [147] opened from [::1]:59754
+Oct 25 18:28 : client: [147] closed
+Oct 25 18:29 : client: [148] opened from [::1]:59756
+Oct 25 18:29 : client: [148] closed
+Oct 25 18:29 : client: [149] opened from [::1]:59758
+Oct 25 18:29 : client: [149] closed
+Oct 25 18:29 : client: [150] opened from [::1]:59760
+Oct 25 18:29 : client: [150] closed
+Oct 25 18:29 : client: [151] opened from [::1]:59762
+Oct 25 18:29 : client: [151] closed
+Oct 25 18:29 : client: [152] opened from [::1]:59764
+Oct 25 18:29 : client: [152] closed
+Oct 25 18:29 : client: [153] opened from [::1]:59766
+Oct 25 18:29 : client: [153] closed
+Oct 25 18:29 : client: [154] opened from [::1]:59768
+Oct 25 18:29 : client: [154] closed
+Oct 25 18:29 : client: [155] opened from [::1]:59770
+Oct 25 18:29 : client: [155] closed
+Oct 25 18:29 : client: [156] opened from [::1]:59780
+Oct 25 18:29 : client: [156] closed
+Oct 25 18:29 : client: [157] opened from [::1]:59782
+Oct 25 18:29 : client: [157] closed
+Oct 25 18:30 : client: [158] opened from [::1]:59788
+Oct 25 18:30 : client: [158] closed
+Oct 25 18:30 : client: [159] opened from [::1]:59808
+Oct 25 18:30 : client: [159] closed
+Oct 25 18:30 : client: [160] opened from [::1]:59810
+Oct 25 18:30 : client: [160] closed
+Oct 25 18:30 : client: [161] opened from [::1]:59812
+Oct 25 18:30 : client: [161] closed
+Oct 25 18:30 : client: [162] opened from [::1]:59814
+Oct 25 18:30 : client: [162] closed
+Oct 25 18:30 : client: [163] opened from [::1]:59816
+Oct 25 18:30 : client: [163] closed
+Oct 25 18:30 : client: [164] opened from [::1]:59818
+Oct 25 18:30 : client: [164] closed
+Oct 25 18:30 : client: [165] opened from [::1]:59822
+Oct 25 18:30 : client: [165] closed
+Oct 25 18:30 : client: [166] opened from [::1]:59824
+Oct 25 18:30 : client: [166] closed
+Oct 25 18:30 : client: [167] opened from [::1]:59826
+Oct 25 18:30 : client: [167] closed
+Oct 25 18:31 : client: [168] opened from [::1]:59828
+Oct 25 18:31 : client: [168] closed
+Oct 25 18:31 : client: [169] opened from [::1]:59830
+Oct 25 18:31 : client: [169] closed
+Oct 25 18:31 : client: [170] opened from [::1]:59832
+Oct 25 18:31 : client: [170] closed
+Oct 25 18:31 : client: [171] opened from [::1]:59834
+Oct 25 18:31 : client: [171] closed
+Oct 25 18:31 : client: [172] opened from [::1]:59836
+Oct 25 18:31 : client: [172] closed
+Oct 25 18:31 : client: [173] opened from [::1]:59838
+Oct 25 18:31 : client: [173] closed
+Oct 25 18:31 : client: [174] opened from [::1]:59840
+Oct 25 18:31 : client: [174] closed
+Oct 25 18:31 : client: [175] opened from [::1]:59842
+Oct 25 18:31 : client: [175] closed
+Oct 25 18:31 : client: [176] opened from [::1]:59844
+Oct 25 18:31 : client: [176] closed
+Oct 25 18:31 : client: [177] opened from [::1]:59846
+Oct 25 18:31 : client: [177] closed
+Oct 25 18:32 : client: [178] opened from [::1]:59848
+Oct 25 18:32 : client: [178] closed
+Oct 25 18:32 : client: [179] opened from [::1]:59850
+Oct 25 18:32 : client: [179] closed
+Oct 25 18:32 : client: [180] opened from [::1]:59852
+Oct 25 18:32 : client: [180] closed
+Oct 25 18:32 : client: [181] opened from [::1]:59854
+Oct 25 18:32 : client: [181] closed
+Oct 25 18:32 : client: [182] opened from [::1]:59856
+Oct 25 18:32 : client: [182] closed
+Oct 25 18:32 : client: [183] opened from [::1]:59858
+Oct 25 18:32 : client: [183] closed
+Oct 25 18:32 : client: [184] opened from [::1]:59860
+Oct 25 18:32 : client: [184] closed
+Oct 25 18:32 : client: [185] opened from [::1]:59862
+Oct 25 18:32 : client: [185] closed
+Oct 25 18:32 : client: [186] opened from [::1]:59864
+Oct 25 18:32 : client: [186] closed
+Oct 25 18:32 : client: [187] opened from [::1]:59866
+Oct 25 18:32 : client: [187] closed
+Oct 25 18:33 : client: [188] opened from [::1]:59868
+Oct 25 18:33 : client: [188] closed
+Oct 25 18:33 : client: [189] opened from [::1]:59870
+Oct 25 18:33 : client: [189] closed
+Oct 25 18:33 : client: [190] opened from [::1]:59872
+Oct 25 18:33 : client: [190] closed
+Oct 25 18:33 : client: [191] opened from [::1]:59874
+Oct 25 18:33 : client: [191] closed
+Oct 25 18:33 : client: [192] opened from [::1]:59876
+Oct 25 18:33 : client: [192] closed
+Oct 25 18:33 : client: [193] opened from [::1]:59878
+Oct 25 18:33 : client: [193] closed
+Oct 25 18:33 : client: [194] opened from [::1]:59880
+Oct 25 18:33 : client: [194] closed
+Oct 25 18:33 : client: [195] opened from [::1]:59882
+Oct 25 18:33 : client: [195] closed
+Oct 25 18:33 : client: [196] opened from [::1]:59886
+Oct 25 18:33 : client: [196] closed
+Oct 25 18:34 : client: [197] opened from [::1]:59888
+Oct 25 18:34 : client: [197] closed
+Oct 25 18:34 : client: [198] opened from [::1]:59890
+Oct 25 18:34 : client: [198] closed
+Oct 25 18:34 : client: [199] opened from [::1]:59892
+Oct 25 18:34 : client: [199] closed
+Oct 25 18:34 : client: [200] opened from [::1]:59894
+Oct 25 18:34 : client: [200] closed
+Oct 25 18:34 : client: [201] opened from [::1]:59896
+Oct 25 18:34 : client: [201] closed
+Oct 25 18:34 : client: [202] opened from [::1]:59898
+Oct 25 18:34 : client: [202] closed
+Oct 25 18:34 : client: [203] opened from [::1]:59906
+Oct 25 18:34 : client: [203] closed
+Oct 25 18:34 : client: [204] opened from [::1]:59908
+Oct 25 18:34 : client: [204] closed
+Oct 25 18:34 : client: [205] opened from [::1]:59910
+Oct 25 18:34 : client: [205] closed
+Oct 25 18:34 : client: [206] opened from [::1]:59912
+Oct 25 18:34 : client: [206] closed
+Oct 25 18:35 : client: [207] opened from [::1]:59914
+Oct 25 18:35 : client: [207] closed
+Oct 25 18:35 : client: [208] opened from [::1]:59916
+Oct 25 18:35 : client: [208] closed
+Oct 25 18:35 : client: [209] opened from [::1]:59918
+Oct 25 18:35 : client: [209] closed
+Oct 25 18:35 : client: [210] opened from [::1]:59920
+Oct 25 18:35 : client: [210] closed
+Oct 25 18:35 : client: [211] opened from [::1]:59922
+Oct 25 18:35 : client: [211] closed
+Oct 25 18:35 : client: [212] opened from [::1]:59924
+Oct 25 18:35 : client: [212] closed
+Oct 25 18:35 : client: [213] opened from [::1]:59926
+Oct 25 18:35 : client: [213] closed
+Oct 25 18:35 : client: [214] opened from [::1]:59928
+Oct 25 18:35 : client: [214] closed
+Oct 25 18:35 : client: [215] opened from [::1]:59932
+Oct 25 18:35 : client: [215] closed
+Oct 25 18:36 : client: [216] opened from [::1]:59934
+Oct 25 18:36 : client: [216] closed
+Oct 25 18:36 : client: [217] opened from [::1]:59936
+Oct 25 18:36 : client: [217] closed
+Oct 25 18:36 : client: [218] opened from [::1]:59938
+Oct 25 18:36 : client: [218] closed
+Oct 25 18:36 : client: [219] opened from [::1]:59940
+Oct 25 18:36 : client: [219] closed
+Oct 25 18:36 : client: [220] opened from [::1]:59942
+Oct 25 18:36 : client: [220] closed
+Oct 25 18:36 : client: [221] opened from [::1]:59944
+Oct 25 18:36 : client: [221] closed
+Oct 25 18:36 : client: [222] opened from [::1]:59946
+Oct 25 18:36 : client: [222] closed
+Oct 25 18:36 : client: [223] opened from [::1]:59948
+Oct 25 18:36 : client: [223] closed
+Oct 25 18:36 : client: [224] opened from [::1]:59950
+Oct 25 18:36 : client: [224] closed
+Oct 25 18:36 : client: [225] opened from [::1]:59952
+Oct 25 18:36 : client: [225] closed
+Oct 25 18:37 : client: [226] opened from [::1]:59954
+Oct 25 18:37 : client: [226] closed
+Oct 25 18:37 : client: [227] opened from [::1]:59956
+Oct 25 18:37 : client: [227] closed
+Oct 25 18:37 : client: [228] opened from [::1]:59960
+Oct 25 18:37 : client: [228] closed
+Oct 25 18:37 : client: [229] opened from [::1]:59962
+Oct 25 18:37 : client: [229] closed
+Oct 25 18:37 : client: [230] opened from [::1]:59964
+Oct 25 18:37 : client: [230] closed
+Oct 25 18:37 : client: [231] opened from [::1]:59966
+Oct 25 18:37 : client: [231] closed
+Oct 25 18:37 : client: [232] opened from [::1]:59968
+Oct 25 18:37 : client: [232] closed
+Oct 25 18:37 : client: [233] opened from [::1]:59970
+Oct 25 18:37 : client: [233] closed
+Oct 25 18:37 : client: [234] opened from [::1]:59972
+Oct 25 18:37 : client: [234] closed
+Oct 25 18:37 : client: [235] opened from [::1]:59974
+Oct 25 18:37 : client: [235] closed
+Oct 25 18:38 : client: [236] opened from [::1]:59976
+Oct 25 18:38 : client: [236] closed
+Oct 25 18:38 : client: [237] opened from [::1]:59978
+Oct 25 18:38 : client: [237] closed
+Oct 25 18:38 : client: [238] opened from [::1]:59980
+Oct 25 18:38 : client: [238] closed
+Oct 25 18:38 : client: [239] opened from [::1]:59982
+Oct 25 18:38 : client: [239] closed
+Oct 25 18:38 : client: [240] opened from [::1]:59984
+Oct 25 18:38 : client: [240] closed
+Oct 25 18:38 : client: [241] opened from [::1]:59986
+Oct 25 18:38 : client: [241] closed
+Oct 25 18:38 : client: [242] opened from [::1]:59988
+Oct 25 18:38 : client: [242] closed
+Oct 25 18:38 : client: [243] opened from [::1]:59990
+Oct 25 18:38 : client: [243] closed
+Oct 25 18:38 : client: [244] opened from [::1]:59992
+Oct 25 18:38 : client: [244] closed
+Oct 25 18:38 : client: [245] opened from [::1]:59994
+Oct 25 18:38 : client: [245] closed
+Oct 25 18:39 : client: [246] opened from [::1]:59996
+Oct 25 18:39 : client: [246] closed
+Oct 25 18:39 : client: [247] opened from [::1]:59998
+Oct 25 18:39 : client: [247] closed
+Oct 25 18:39 : client: [248] opened from [::1]:60000
+Oct 25 18:39 : client: [248] closed
+Oct 25 18:39 : client: [249] opened from [::1]:60002
+Oct 25 18:39 : client: [249] closed
+Oct 25 18:39 : client: [250] opened from [::1]:60004
+Oct 25 18:39 : client: [250] closed
+Oct 25 18:39 : client: [251] opened from [::1]:60006
+Oct 25 18:39 : client: [251] closed
+Oct 25 18:39 : client: [252] opened from [::1]:60008
+Oct 25 18:39 : client: [252] closed
+Oct 25 18:39 : client: [253] opened from [::1]:60010
+Oct 25 18:39 : client: [253] closed
+Oct 25 18:39 : client: [254] opened from [::1]:60012
+Oct 25 18:39 : client: [254] closed
+Oct 25 18:39 : client: [255] opened from [::1]:60014
+Oct 25 18:39 : client: [255] closed
+Oct 25 18:40 : client: [256] opened from [::1]:60016
+Oct 25 18:40 : client: [256] closed
+Oct 25 18:40 : client: [257] opened from [::1]:60018
+Oct 25 18:40 : client: [257] closed
+Oct 25 18:40 : client: [258] opened from [::1]:60020
+Oct 25 18:40 : client: [258] closed
+Oct 25 18:40 : client: [259] opened from [::1]:60022
+Oct 25 18:40 : client: [259] closed
+Oct 25 18:40 : client: [260] opened from [::1]:60024
+Oct 25 18:40 : client: [260] closed
+Oct 25 18:40 : client: [261] opened from [::1]:60026
+Oct 25 18:40 : client: [261] closed
+Oct 25 18:40 : client: [262] opened from [::1]:60028
+Oct 25 18:40 : client: [262] closed
+Oct 25 18:40 : client: [263] opened from [::1]:60030
+Oct 25 18:40 : client: [263] closed
+Oct 25 18:40 : client: [264] opened from [::1]:60032
+Oct 25 18:40 : client: [264] closed
+Oct 25 18:40 : client: [265] opened from [::1]:60036
+Oct 25 18:40 : client: [265] closed
+Oct 25 18:41 : client: [266] opened from [::1]:60038
+Oct 25 18:41 : client: [266] closed
+Oct 25 18:41 : client: [267] opened from [::1]:60040
+Oct 25 18:41 : client: [267] closed
+Oct 25 18:41 : client: [268] opened from [::1]:60042
+Oct 25 18:41 : client: [268] closed
+Oct 25 18:41 : client: [269] opened from [::1]:60044
+Oct 25 18:41 : client: [269] closed
+Oct 25 18:41 : client: [270] opened from [::1]:60046
+Oct 25 18:41 : client: [270] closed
+Oct 25 18:41 : client: [271] opened from [::1]:60048
+Oct 25 18:41 : client: [271] closed
+Oct 25 18:41 : client: [272] opened from [::1]:60050
+Oct 25 18:41 : client: [272] closed
+Oct 25 18:41 : client: [273] opened from [::1]:60052
+Oct 25 18:41 : client: [273] closed
+Oct 25 18:41 : client: [274] opened from [::1]:60060
+Oct 25 18:41 : client: [274] closed
+Oct 25 18:41 : client: [275] opened from [::1]:60062
+Oct 25 18:41 : client: [275] closed
+Oct 25 18:41 : client: [276] opened from [::1]:60064
+Oct 25 18:41 : client: [276] closed
+Oct 25 18:41 : client: [277] opened from [::1]:60066
+Oct 25 18:41 : client: [277] closed
+Oct 25 18:42 : client: [278] opened from [::1]:60068
+Oct 25 18:42 : client: [278] closed
+Oct 25 18:42 : client: [279] opened from [::1]:60070
+Oct 25 18:42 : client: [279] closed
+Oct 25 18:42 : client: [280] opened from [::1]:60072
+Oct 25 18:42 : client: [280] closed
+Oct 25 18:42 : client: [281] opened from [::1]:60074
+Oct 25 18:42 : client: [281] closed
+Oct 25 18:42 : client: [282] opened from [::1]:60076
+Oct 25 18:42 : client: [282] closed
+Oct 25 18:42 : client: [283] opened from [::1]:60084
+Oct 25 18:42 : client: [283] closed
+Oct 25 18:42 : client: [284] opened from [::1]:60086
+Oct 25 18:42 : client: [284] closed
+Oct 25 18:42 : client: [285] opened from [::1]:60104
+Oct 25 18:42 : client: [285] closed
+Oct 25 18:42 : client: [286] opened from [::1]:60106
+Oct 25 18:42 : client: [286] closed
+Oct 25 18:42 : client: [287] opened from [::1]:60108
+Oct 25 18:42 : client: [287] closed
+Oct 25 18:43 : client: [288] opened from [::1]:60120
+Oct 25 18:43 : client: [288] closed
+Oct 25 18:43 : client: [289] opened from [::1]:60122
+Oct 25 18:43 : client: [289] closed
+Oct 25 18:43 : client: [290] opened from [::1]:60126
+Oct 25 18:43 : client: [290] closed
+Oct 25 18:43 : client: [291] opened from [::1]:60150
+Oct 25 18:43 : client: [291] closed
+Oct 25 18:43 : client: [292] opened from [::1]:60152
+Oct 25 18:43 : client: [292] closed
+Oct 25 18:43 : client: [293] opened from [::1]:60154
+Oct 25 18:43 : client: [293] closed
+Oct 25 18:43 : client: [294] opened from [::1]:60156
+Oct 25 18:43 : client: [294] closed
+Oct 25 18:43 : client: [295] opened from [::1]:60158
+Oct 25 18:43 : client: [295] closed
+Oct 25 18:43 : client: [296] opened from [::1]:60164
+Oct 25 18:43 : client: [296] closed
+Oct 25 18:43 : client: [297] opened from [::1]:60166
+Oct 25 18:43 : client: [297] closed
+Oct 25 18:43 : client: [298] opened from [::1]:60170
+Oct 25 18:43 : client: [298] closed
+Oct 25 18:43 : client: [299] opened from [::1]:60172
+Oct 25 18:43 : client: [299] closed
+Oct 25 18:44 : client: [300] opened from [::1]:60174
+Oct 25 18:44 : client: [300] closed
+Oct 25 18:44 : client: [301] opened from [::1]:60176
+Oct 25 18:44 : client: [301] closed
+Oct 25 18:44 : client: [302] opened from [::1]:60178
+Oct 25 18:44 : client: [302] closed
+Oct 25 18:44 : client: [303] opened from [::1]:60180
+Oct 25 18:44 : client: [303] closed
+Oct 25 18:44 : client: [304] opened from [::1]:60182
+Oct 25 18:44 : client: [304] closed
+Oct 25 18:44 : client: [305] opened from [::1]:60184
+Oct 25 18:44 : client: [305] closed
+Oct 25 18:44 : client: [306] opened from [::1]:60186
+Oct 25 18:44 : client: [306] closed
+Oct 25 18:44 : client: [307] opened from [::1]:60188
+Oct 25 18:44 : client: [307] closed
+Oct 25 18:44 : client: [308] opened from [::1]:60190
+Oct 25 18:44 : errno: Failed to stat /home/muffin/music: No such file or directory
+Oct 25 18:44 : client: [308] closed
+Oct 25 18:44 : client: [309] opened from [::1]:60192
+Oct 25 18:44 : client: [309] closed
+Oct 25 18:44 : client: [310] opened from [::1]:60194
+Oct 25 18:44 : db: No such directory
+Oct 25 18:44 : client: [310] closed
+Oct 25 18:44 : client: [311] opened from [::1]:60196
+Oct 25 18:44 : client: [311] closed
+Oct 25 18:44 : client: [312] opened from [::1]:60198
+Oct 25 18:44 : db: No such directory
+Oct 25 18:44 : client: [312] closed
+Oct 25 18:45 : client: [313] opened from [::1]:60200
+Oct 25 18:45 : client: [313] closed
+Oct 25 18:45 : client: [314] opened from [::1]:60202
+Oct 25 18:45 : client: [314] closed
+Oct 25 18:45 : client: [315] opened from [::1]:60204
+Oct 25 18:45 : client: [315] closed
+Oct 25 18:45 : client: [316] opened from [::1]:60206
+Oct 25 18:45 : client: [316] closed
+Oct 25 18:45 : client: [317] opened from [::1]:60208
+Oct 25 18:45 : client: [317] closed
+Oct 25 18:45 : client: [318] opened from [::1]:60210
+Oct 25 18:45 : client: [318] closed
+Oct 25 18:45 : client: [319] opened from [::1]:60212
+Oct 25 18:45 : client: [319] closed
+Oct 25 18:45 : client: [320] opened from [::1]:60214
+Oct 25 18:45 : client: [320] closed
+Oct 25 18:45 : client: [321] opened from [::1]:60216
+Oct 25 18:45 : client: [321] closed
+Oct 25 18:45 : client: [322] opened from [::1]:60218
+Oct 25 18:45 : client: [322] closed
+Oct 25 18:45 : client: [323] opened from [::1]:60220
+Oct 25 18:45 : client: [323] closed
+Oct 25 18:45 : client: [324] opened from [::1]:60224
+Oct 25 18:45 : client: [324] closed
+Oct 25 18:46 : client: [325] opened from [::1]:60226
+Oct 25 18:46 : client: [325] closed
+Oct 28 21:28 : client: [0] opened from [::1]:59680
+Oct 28 21:28 : alsa_mixer: Failed to read mixer for 'default detected output': no such mixer control: PCM
+Oct 28 21:28 : client: [0] closed
+Oct 28 21:28 : client: [1] opened from [::1]:59682
+Oct 28 21:28 : client: [1] closed
+Oct 28 21:29 : client: [2] opened from [::1]:59684
+Oct 28 21:29 : client: [2] closed
+Oct 28 21:29 : client: [3] opened from [::1]:59686
+Oct 28 21:29 : client: [3] closed
+Oct 28 21:29 : client: [4] opened from [::1]:59694
+Oct 28 21:29 : client: [4] closed
+Oct 28 21:29 : client: [5] opened from [::1]:59696
+Oct 28 21:29 : client: [5] closed
+Oct 28 21:29 : client: [6] opened from [::1]:59698
+Oct 28 21:29 : client: [6] closed
+Oct 28 21:29 : client: [7] opened from [::1]:59700
+Oct 28 21:29 : client: [7] closed
+Oct 28 21:29 : client: [8] opened from [::1]:59710
+Oct 28 21:29 : client: [8] closed
+Oct 28 21:29 : client: [9] opened from [::1]:59712
+Oct 28 21:29 : client: [9] closed
+Oct 28 21:29 : client: [10] opened from [::1]:59714
+Oct 28 21:29 : client: [10] closed
+Oct 28 21:29 : client: [11] opened from [::1]:59718
+Oct 28 21:29 : client: [11] closed
+Oct 28 21:29 : client: [12] opened from [::1]:59720
+Oct 28 21:29 : client: [12] closed
+Oct 28 21:29 : client: [13] opened from [::1]:59724
+Oct 28 21:29 : client: [13] closed
+Oct 28 21:30 : client: [14] opened from [::1]:59726
+Oct 28 21:30 : client: [14] closed
+Oct 28 21:30 : client: [15] opened from [::1]:59728
+Oct 28 21:30 : client: [15] closed
+Oct 28 21:30 : client: [16] opened from [::1]:59734
+Oct 28 21:30 : client: [16] closed
+Oct 28 21:30 : client: [17] opened from [::1]:59736
+Oct 28 21:30 : client: [17] closed
+Oct 28 21:30 : client: [18] opened from [::1]:59738
+Oct 28 21:30 : client: [18] closed
+Oct 28 21:30 : client: [19] opened from [::1]:59742
+Oct 28 21:30 : client: [19] closed
+Oct 28 21:30 : client: [20] opened from [::1]:59746
+Oct 28 21:30 : client: [20] closed
+Oct 28 21:30 : client: [21] opened from [::1]:59750
+Oct 28 21:30 : client: [21] closed
+Oct 28 21:30 : client: [22] opened from [::1]:59752
+Oct 28 21:30 : client: [22] closed
+Oct 28 21:30 : client: [23] opened from [::1]:59754
+Oct 28 21:30 : client: [23] closed
+Oct 28 21:31 : client: [24] opened from [::1]:59756
+Oct 28 21:31 : client: [24] closed
+Oct 28 21:31 : client: [25] opened from [::1]:59758
+Oct 28 21:31 : client: [25] closed
+Oct 28 21:31 : client: [26] opened from [::1]:59762
+Oct 28 21:31 : client: [26] closed
+Oct 28 21:31 : client: [27] opened from [::1]:59764
+Oct 28 21:31 : client: [27] closed
+Oct 28 21:31 : client: [28] opened from [::1]:59770
+Oct 28 21:31 : client: [28] closed
+Oct 28 21:31 : client: [29] opened from [::1]:59772
+Oct 28 21:31 : client: [29] closed
+Oct 28 21:31 : client: [30] opened from [::1]:59774
+Oct 28 21:31 : client: [30] closed
+Oct 28 21:31 : client: [31] opened from [::1]:59776
+Oct 28 21:31 : client: [31] closed
+Oct 28 21:31 : client: [32] opened from [::1]:59778
+Oct 28 21:31 : client: [32] closed
+Oct 28 21:31 : client: [33] opened from [::1]:59782
+Oct 28 21:31 : client: [33] closed
+Oct 28 21:32 : client: [34] opened from [::1]:59784
+Oct 28 21:32 : client: [34] closed
+Oct 28 21:32 : client: [35] opened from [::1]:59786
+Oct 28 21:32 : client: [35] closed
+Oct 28 21:32 : client: [36] opened from [::1]:59788
+Oct 28 21:32 : client: [36] closed
+Oct 28 21:32 : client: [37] opened from [::1]:59790
+Oct 28 21:32 : client: [37] closed
+Oct 28 21:32 : client: [38] opened from [::1]:59794
+Oct 28 21:32 : client: [38] closed
+Oct 28 21:32 : client: [39] opened from [::1]:59796
+Oct 28 21:32 : client: [39] closed
+Oct 28 21:32 : client: [40] opened from [::1]:59798
+Oct 28 21:32 : client: [40] closed

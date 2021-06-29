@@ -30,7 +30,7 @@ font pango:scientifica 9
 # font, it doesn’t scale on retina/hidpi displays.
 
 # mpd password for mpc
-set $mpdpass ***REMOVED***
+set $mpdpass ** REMOVED **
 
 
 # ---- LOOK ----

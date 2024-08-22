@@ -10,8 +10,11 @@
     desktop.gnome = true;
     flatpak.enable = true;
     gaming.enable = true;
+    gamescope.enable = false;
     boot.manager = "grub";
   };
+
+  disabledModules = [ "../../modules/nixos/gamescope.nix" ];
 
   # You can import other NixOS modules here
   imports = with inputs.hardware.nixosModules; [

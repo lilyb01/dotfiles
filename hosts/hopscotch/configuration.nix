@@ -19,7 +19,7 @@
     desktop.gnome = true;
     flatpak.enable = true;
     gaming.enable = true;
-    gamescope.enable = false;
+    gamescope.enable = true;
     boot.manager = "grub";
   };
 

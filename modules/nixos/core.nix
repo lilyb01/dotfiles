@@ -7,6 +7,7 @@
       wget
       curl
       git
+      wlroots
       hyfetch # highly important
     ];
 

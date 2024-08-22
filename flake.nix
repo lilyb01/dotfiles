@@ -7,14 +7,14 @@
     hardware.url = "github:nixos/nixos-hardware";
 
     # Nixpkgs
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.05";
-    nixpkgs-unstable.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
     # Home manager
-    home-manager.url = "github:nix-community/home-manager/release-24.05";
+    home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
-    home-manager-unstable.url = "github:nix-community/home-manager";
-    home-manager-unstable.inputs.nixpkgs.follows = "nixpkgs-unstable";
+    home-manager-stable.url = "github:nix-community/home-manager/release-24.05";
+    home-manager-stable.inputs.nixpkgs.follows = "nixpkgs-stable";
 
     # disko - dunno if i'll use this but just in case
     disko.url = "github:nix-community/disko";
@@ -38,6 +38,10 @@
 
     # declarative flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
+
+    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
+    jovian.follows = "chaotic/jovian";
   };
 
   outputs = inputs@ { flake-parts, ... }:

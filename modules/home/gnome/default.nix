@@ -65,14 +65,19 @@ in
           experimental-features = [ "scale-monitor-framebuffer" ];
         };
         "org/gnome/desktop/interface" = {
+          clock-format = "12h";
+          clock-show-weekday = true;
           color-scheme = "prefer-dark";
           enable-hot-corners = true;
           show-battery-percentage = true;
           icon-theme = "Papirus-Dark";
         };
         "org/gnome/desktop/background" = {
-            picture-uri = "file:///home/lily/wallpaper.jpg";
-            picture-uri-dark = "file:///home/lily/wallpaper_dark.jpg";
+          picture-uri = "file:///home/lily/wallpaper.jpg";
+          picture-uri-dark = "file:///home/lily/wallpaper_dark.jpg";
+        };
+        "org/gnome/desktop/wm/preferences" = {
+          button-layout = "appmenu:minimize,maximize,close";
         };
         "org/gnome/desktop/peripherals/mouse" = {
           accel-profile = "default";

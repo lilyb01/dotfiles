@@ -30,7 +30,7 @@ in
         };
         decky-loader = lib.mkIf config.custom.deckyloader.enable {
           enable = true;
-        }
+        };
     };
 
     environment.systemPackages = lib.mkIf config.custom.steamdeck.enable [

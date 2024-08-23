@@ -1,6 +1,8 @@
 { config, inputs, lib, pkgs, ... }:
 let
   cfg = config.custom.gamescope;
+  cfgdeck = config.custom.steamdeck;
+  cfgloader = config.custom.deckyloader;
 in
 {
   options.custom.gamescope.enable = lib.mkEnableOption "steam gamescope";
@@ -25,15 +27,15 @@ in
             user = "lily";
             desktopSession = "gnome";
         };
-        devices.steamdeck = lib.mkIf config.custom.steamdeck.enable {
+        devices.steamdeck = lib.mkIf cfgdeck.enable {
             enable = true;
         };
-        decky-loader = lib.mkIf config.custom.deckyloader.enable {
+        decky-loader = lib.mkIf cfgloader.enable {
           enable = true;
         };
     };
 
-    environment.systemPackages = lib.mkIf config.custom.steamdeck.enable [
+    environment.systemPackages = lib.mkIf cfgdeck.enable [
       pkgs.jupiter-dock-updater-bin
       pkgs.steamdeck-firmware
     ];

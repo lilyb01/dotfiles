@@ -11,6 +11,7 @@
     flatpak.enable = true;
     gaming.enable = true;
     gamescope.enable = false;
+    steamdeck.enable = false;
     boot.manager = "grub";
   };
 
@@ -25,6 +26,8 @@
     common-pc-ssd
     ./hardware-configuration.nix
   ];
+
+  boot.initrd.kernelModules = [ "amdgpu" ];
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "24.05";

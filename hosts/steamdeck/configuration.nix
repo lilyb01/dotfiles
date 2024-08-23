@@ -11,6 +11,7 @@
     flatpak.enable = true;
     gaming.enable = true;
     gamescope.enable = true;
+    steamdeck.enable = true;
     boot.manager = "grub";
   };
 

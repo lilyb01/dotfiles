@@ -6,6 +6,8 @@ in
   options.custom.gaming.enable = lib.mkEnableOption "gaming";
 
   config = lib.mkIf cfg.enable {
+    hardware.graphics.enable = true;
+
     programs.steam = {
       enable = true;
       remotePlay.openFirewall = true;

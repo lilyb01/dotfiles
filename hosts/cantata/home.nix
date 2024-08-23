@@ -1,7 +1,18 @@
 { lib, pkgs, ... }: {
     custom = {
         editors.vscode = true;
-        gnome.favorites = lib.mkAfter [];
+        gnome.favorites =  [
+           "firefox-devedition.desktop"
+           "org.gnome.Nautilus.desktop"
+           "org.gnome.Geary.desktop"
+           "org.gnome.Calendar.desktop"
+           "com.plexamp.Plexamp.desktop"
+           "obsidian.desktop"
+           "code.desktop"
+           "org.codeberg.dnkl.foot.desktop"
+           "vesktop.desktop"
+           "org.telegram.desktop.desktop" 
+        ];
         gnome.extensions = with pkgs.gnomeExtensions; [
           user-themes
           dash-to-dock

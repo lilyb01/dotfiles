@@ -7,6 +7,7 @@
       wget
       curl
       git
+      python3
       wlroots
       hyfetch # highly important
     ];

@@ -20,5 +20,8 @@
 
     # Allow users to mount removable drives
     services.udisks2.enable = true;
+
+    programs.zsh.enable = true;
+    users.users.lily.shell = pkgs.zsh;
   };
 }

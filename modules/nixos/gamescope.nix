@@ -5,6 +5,7 @@ in
 {
   options.custom.gamescope.enable = lib.mkEnableOption "steam gamescope";
   options.custom.steamdeck.enable = lib.mkEnableOption "steam deck";
+  options.custom.deckyloader.enable = lib.mkEnableOption "decky loader";
 
   imports = [
     inputs.jovian.nixosModules.default
@@ -27,6 +28,9 @@ in
         devices.steamdeck = lib.mkIf config.custom.steamdeck.enable {
             enable = true;
         };
+        decky-loader = lib.mkIf config.custom.deckyloader.enable {
+          enable = true;
+        }
     };
 
     environment.systemPackages = lib.mkIf config.custom.steamdeck.enable [

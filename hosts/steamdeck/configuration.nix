@@ -12,7 +12,9 @@
     gaming.enable = true;
     gamescope.enable = true;
     steamdeck.enable = true;
+    deckyloader.enable = true;
     boot.manager = "grub";
+    tailscale.enable = true;
   };
 
   # You can import other NixOS modules here

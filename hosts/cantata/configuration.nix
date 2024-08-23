@@ -13,6 +13,7 @@
     gamescope.enable = false;
     steamdeck.enable = false;
     boot.manager = "grub";
+    tailscale.enable = true;
   };
 
   disabledModules = [ "../../modules/nixos/gamescope.nix" ];

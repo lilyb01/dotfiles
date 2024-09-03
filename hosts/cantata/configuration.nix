@@ -8,12 +8,26 @@
   custom = {
     boot.splash = true;
     desktop.gnome = true;
+    desktop.kde = true;
     flatpak.enable = true;
     gaming.enable = true;
     gamescope.enable = false;
     steamdeck.enable = false;
-    boot.manager = "grub";
+    boot.manager = "systemd-boot";
     tailscale.enable = true;
+    login.manager = "sddm";
+    virt.waydroid.enable = true;
+    server.samba.enable = true;
+    server.samba.shares = {
+      Home = {
+        path = "/home/lily";
+        browseable = "yes";
+        "read only" = "no";
+        "guest ok" = "no";
+        "veto files" = "/.apdisk/.DS_Store/.TemporaryItems/.Trashes/desktop.ini/ehthumbs.db/Network Trash Folder/Temporary Items/Thumbs.db/";
+        "delete veto files" = "yes";
+      };
+    };
   };
 
   disabledModules = [ "../../modules/nixos/gamescope.nix" ];

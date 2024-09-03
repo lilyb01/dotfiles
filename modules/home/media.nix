@@ -50,14 +50,18 @@ in
         yt-dlp
     ];
 
-    programs = {
-        #mpv = {
-        #  enable = true;
-        #  defaultProfiles = ["gpu-hq"];
-        #  scripts = [pkgs.mpvScripts.mpris];
-        #};
-
-        obs-studio.enable = true;
+    programs.obs-studio = {
+      enable = true;
+      plugins = with pkgs.obs-studio-plugins; [
+        wlrobs
+        obs-tuna
+        obs-webkitgtk
+        obs-vkcapture
+        obs-gstreamer
+        obs-text-pthread
+        obs-composite-blur
+        obs-pipewire-audio-capture
+      ];
     };
 
     services = {

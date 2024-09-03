@@ -62,7 +62,6 @@ in
         };
         "org/gnome/mutter" = {
           edge-tiling = true;
-          experimental-features = [ "scale-monitor-framebuffer" ];
         };
         "org/gnome/desktop/interface" = {
           clock-format = "12h";

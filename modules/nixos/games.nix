@@ -27,6 +27,7 @@ in
       xivlauncher
       prismlauncher
       steam-run
+      r2modman
     ];
 
     nixpkgs.config.allowUnfreePredicate = pkg: lib.elem (lib.getName pkg) [

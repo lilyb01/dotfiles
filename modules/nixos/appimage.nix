@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 let
   cfg = config.custom.appimage;
 in
@@ -12,5 +12,9 @@ in
       enable = true;
       binfmt = true;
     };
+
+    environment.systemPackages = with pkgs; [
+      gearlever
+    ];
   };
 }

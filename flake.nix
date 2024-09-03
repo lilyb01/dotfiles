@@ -20,6 +20,15 @@
     disko.url = "github:nix-community/disko";
     disko.inputs.nixpkgs.follows = "nixpkgs";
 
+    agenix.url = "github:ryantm/agenix";
+    agenix.inputs.nixpkgs.follows = "nixpkgs";
+    sops-nix.url = "github:Mic92/sops-nix";
+
+    nix-secrets = {
+      url = "git+ssh://git@github.com/lilyb01/nix-secrets?shallow=1&ref=main";
+      flake = false;
+    };
+
     # Hyprland and plugins
     hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
     hyprland-plugins = {
@@ -42,6 +51,10 @@
     chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     jovian.follows = "chaotic/jovian";
+
+    nur.url = "github:nix-community/NUR";
+
+    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
   };
 
   outputs = inputs@ { flake-parts, ... }:
@@ -52,6 +65,7 @@
       imports = [
         ./hosts/flake-module.nix
         ./modules/flake-module.nix
+        ./lib/flake-module.nix
       ];
     };
 

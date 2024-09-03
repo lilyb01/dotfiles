@@ -19,6 +19,7 @@ in
       enableExtensionUpdateCheck = false;
 
       userSettings = {
+        window.titleBarStyle = "custom";
       };
 
       extensions = with pkgs.vscode-extensions; [

@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ inputs, pkgs, ... }: {
   config = {
     fonts = {
       packages = with pkgs; [
@@ -21,6 +21,16 @@
 
         # monospace
         cozette
+
+        corefonts
+        vistafonts
+
+        inputs.apple-fonts.packages.${pkgs.system}.sf-pro
+        inputs.apple-fonts.packages.${pkgs.system}.sf-compact
+        inputs.apple-fonts.packages.${pkgs.system}.sf-mono
+        inputs.apple-fonts.packages.${pkgs.system}.sf-arabic
+        inputs.apple-fonts.packages.${pkgs.system}.ny
+
       ];
 
       # use fonts specified by user rather than default ones

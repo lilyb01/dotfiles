@@ -16,23 +16,23 @@ in
   };
 
   config = {
-      boot.loader.systemd-boot = lib.mkIf (cfg.manager == "grub") {
-        enable = false;
-      };
+      #boot.loader.systemd-boot = lib.mkIf (cfg.manager == "grub") {
+      #  enable = false;
+      #};
 
     boot.loader = {
       ${cfg.manager} = {
         enable = true;
         configurationLimit = 8;
-        useOSProber = true;
-        efiSupport = true;
-        device = "nodev";
+    #    useOSProber = true;
+    #    efiSupport = true;
+    #    device = "nodev";
       };
 
       # Disable boot timeout.
       # Spam "almost any key" to show the menu (<space> work well).
       # Or run: systemctl reboot --boot-loader-menu=0
-      timeout = 0;
+      timeout = 5;
 
       efi.canTouchEfiVariables = true;
     };

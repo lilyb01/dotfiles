@@ -33,21 +33,25 @@
   fileSystems."/mnt/cantata" =
     { device = "/dev/disk/by-uuid/F8908EDF908EA3AA";
       fsType = "ntfs3";
+      options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/mnt/sonata-n1" =
     { device = "/dev/disk/by-uuid/54800B18800AFFEA";
       fsType = "ntfs3";
+      options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/mnt/sonata-s1" =
     { device = "/dev/disk/by-uuid/D2C452DFC452C4FF";
       fsType = "ntfs3";
+      options = [ "rw" "uid=1000"];
     };
 
   fileSystems."/mnt/sonata-s2" =
     { device = "/dev/disk/by-uuid/2E6EC61F6EC5E027";
       fsType = "ntfs3";
+      options = [ "rw" "uid=1000"];
     };
 
   swapDevices = [ ];

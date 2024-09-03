@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }: {
+{ lib, pkgs, inputs, ... }: {
     custom = {
         editors.vscode = true;
         gnome.favorites =  [
@@ -46,7 +46,7 @@
       };
       home.file."lockscreen-dark.jpg" = {
         source = ../../wallpaper/lockscreen-dark.jpg;
-      };
+      }; 
 
     home.stateVersion = "24.05";
 }

@@ -8,8 +8,10 @@
       curl
       git
       python3
+      age
       wlroots
       hyfetch # highly important
+      ktailctl
     ];
 
     programs.neovim = {
@@ -23,6 +25,5 @@
     services.udisks2.enable = true;
 
     programs.zsh.enable = true;
-    users.users.lily.shell = pkgs.zsh;
   };
 }

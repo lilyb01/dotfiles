@@ -4,8 +4,6 @@ let
 
   mkSystem = name:
     { system
-    , username ? "lily"
-    , fullname ? "Lily"
     , modules ? [ ]
     , version ? "nixpkgs"
     , hmversion ? "home-manager"
@@ -14,25 +12,21 @@ let
       inherit system specialArgs;
       modules = modules ++ [
         ./${name}/configuration.nix
+        ../users
         self.nixosModules.common
         self.nixosModules.nixos
+        inputs.nur.nixosModules.nur
         inputs.chaotic.nixosModules.default
         inputs.disko.nixosModules.default
+        inputs.sops-nix.nixosModules.sops
         inputs.${hmversion}.nixosModules.home-manager
         {
           networking.hostName = lib.mkDefault name;
-          users.users.${username} = {
-            description = fullname;
-            extraGroups = [ "wheel" "networkmanager" ];
-            initialPassword = "init";
-            isNormalUser = true;
-          };
           home-manager = {
             useGlobalPkgs = true;
             useUserPackages = true;
             extraSpecialArgs = specialArgs;
             sharedModules = [ self.homeModules.home ];
-            users.${username} = ./${name}/home.nix;
           };
         }
       ];
@@ -48,6 +42,7 @@ let
       inherit system specialArgs;
       modules = modules ++ [
         ./${name}/configuration.nix
+        ../users
         self.nixosModules.common
         self.nixosModules.nixos
         inputs.disko.nixosModules.default
@@ -99,7 +94,7 @@ in
       cantata = { system = "x86_64-linux"; };
       #sonata = { system = "aarch64-linux"; };
       steamdeck = { system = "x86_64-linux"; };
-      #tapioca = { system = "x86_64-linux"; version = "nixpkgs"; hmversion="home-manager";}
+      tapioca = { system = "x86_64-linux"; }; #version = "nixpkgs"; hmversion="home-manager";
       hopscotch = { system = "x86_64-linux";};
     };
 

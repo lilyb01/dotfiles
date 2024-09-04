@@ -1,36 +1,35 @@
-{ disks ? [ "/dev/sda" ], ... }: {
+{ ... }: {
   disko.devices = {
-    disk = {
+    disks = {
       sda = {
-        device = builtins.elemAt disks 0;
+        device = "/dev/sda";
         type = "disk";
         content = {
-          type = "table";
-          format = "gpt";
-          partitions = [
-            {
-              name = "ESP";
+          type = "gpt";
+          partitions = {
+            ESP = {
               start = "1MiB";
               end = "500MiB";
               bootable = true;
+              priority = 1;
               content = {
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
               };
-            }
-            {
-              name = "tapioca_root";
+            };
+            tapioca_root = {
               start = "500MiB";
               end = "100%";
               part-type = "primary";
+              priority = 2;
               content = {
                 type = "filesystem";
                 format = "bcachefs";
                 mountpoint = "/";
               };
-            }
-          ];
+            };
+          };
         };
       };
     };

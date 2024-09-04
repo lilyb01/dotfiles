@@ -55,6 +55,7 @@
     common-cpu-amd-zenpower
     common-gpu-amd
     common-pc-ssd
+    ./hardware-configuration.nix
   ];
 
   boot.initrd.kernelModules = [ ];

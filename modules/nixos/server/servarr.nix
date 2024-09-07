@@ -17,7 +17,7 @@ let
   mkService = service: {
     services.${service} = {
       enable = true;
-      group = "media";
+      #group = "media";
     };
   };
 

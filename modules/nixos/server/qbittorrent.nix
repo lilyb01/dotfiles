@@ -172,7 +172,7 @@ in
         enableACME = true;
         forceSSL = true;
         locations."/" = {
-          proxyPass = "http://127.0.0.1:${cfg.webUIAddress.port}";
+          proxyPass = "http://127.0.0.1:${toString cfg.webUIAddress.port}";
           extraConfig = 
             "proxy_ssl_server_name on;" +
             "proxy_pass_header Authorization;";

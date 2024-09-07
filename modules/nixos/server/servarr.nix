@@ -7,6 +7,7 @@ let
   cfg = config.custom.server.servarr;
 
   ports = {
+    prowlarr = 9696;
     bazarr = 6767;
     lidarr = 8686;
     radarr = 7878;
@@ -20,13 +21,20 @@ let
     };
   };
 
-  #mkRedirection = service: {
-  #  custom.server.nginx.virtualHosts = {
-  #    ${service} = {
-  #      port = ports.${service};
-  #    };
-  #  };
-  #};
+  mkRedirection = service: {
+    services.nginx.virtualHosts = {
+      "${service}.${config.networking.domain}" = {
+        enableACME = true;
+        forceSSL = true;
+        locations."/" = {
+          proxyPass = "http://127.0.0.1:" + ports.${service};
+          extraConfig = 
+            "proxy_ssl_server_name on;" +
+            "proxy_pass_header Authorization;";
+        };
+      };
+    };
+  };
 
   mkFail2Ban = service: lib.mkIf cfg.${service}.enable {
     services.fail2ban.jails = {
@@ -80,6 +88,9 @@ in
     {
       # Set-up media group
       users.groups.media = { };
+
+      # TODO make this dependant on what's actually enabled. or just disable this and use nginx ig.
+      networking.firewall.allowedTCPPorts = [ 9696 6767 8686 7878 8989 ];
     }
     # Bazarr does not log authentication failures...
     (mkFullConfig "bazarr")
@@ -92,5 +103,8 @@ in
     # Sonarr for shows
     (mkFullConfig "sonarr")
     (mkFail2Ban "sonarr")
+    # Prowlarr for indexing
+    (mkFullConfig "prowlarr")
+    #i haven't checked if prowlarr logs auth fails or not :/
   ]);
 }

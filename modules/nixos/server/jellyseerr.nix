@@ -1,25 +1,22 @@
-# Usenet binary client.
 { config, lib, ... }:
 let
-  cfg = config.custom.server.pms;
-  port = 32400; # NOTE: not declaratively set...
+  cfg = config.custom.server.jellyseerr;
+  port = 5055; # NOTE: not declaratively set...
 in
 {
-  options.custom.server.pms = with lib; {
-    enable = mkEnableOption "Plex Media Server";
+  options.custom.server.jellyseerr = with lib; {
+    enable = mkEnableOption "Jellyseerr";
   };
 
   config = lib.mkIf cfg.enable {
-    services.plex = {
+    services.jellyseerr = {
       enable = true;
-      dataDir = "/var/lib/plex";
       openFirewall = true;
-      user = "plex";
-      group = "plex";
+      port = port;
     };
 
     services.nginx.virtualHosts = {
-      "plex.${config.networking.domain}" = {
+      "overseerr.${config.networking.domain}" = {
         enableACME = true;
         forceSSL = true;
         locations."/" = {

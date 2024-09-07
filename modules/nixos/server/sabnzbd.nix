@@ -2,7 +2,7 @@
 { config, lib, ... }:
 let
   cfg = config.custom.server.sabnzbd;
-  port = 9090; # NOTE: not declaratively set...
+  port = 8080; # NOTE: not declaratively set...
 in
 {
   options.custom.server.sabnzbd = with lib; {
@@ -10,6 +10,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    networking.firewall.allowedTCPPorts = [ port ];
     services.sabnzbd = {
       enable = true;
       group = "media";
@@ -18,11 +19,18 @@ in
     # Set-up media group
     users.groups.media = { };
 
-    #custom.server.nginx.virtualHosts = {
-    #  sabnzbd = {
-    #    inherit port;
-    #  };
-    #};
+    services.nginx.virtualHosts = {
+      "sabnzbd.${config.networking.domain}" = {
+        enableACME = true;
+        forceSSL = true;
+        locations."/" = {
+          proxyPass = "http://127.0.0.1:${port}";
+          extraConfig = 
+            "proxy_ssl_server_name on;" +
+            "proxy_pass_header Authorization;";
+        };
+      };
+    };
 
     services.fail2ban.jails = {
       sabnzbd = ''

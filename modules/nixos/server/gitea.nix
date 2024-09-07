@@ -113,16 +113,19 @@ in
     };
     users.groups.git = { };
 
-    #custom.server.nginx.virtualHosts = {
-    #  # Proxy to Gitea
-    #  git = {
-    #    inherit (cfg) port;
-    #  };
-    #  # Redirect `gitea.` to actual forge subdomain
-    #  gitea = {
-    #    redirect = config.services.gitea.settings.server.ROOT_URL;
-    #  };
-    #};
+    services.nginx.virtualHosts = {
+      # Proxy to Gitea
+      "git.${config.networking.domain}" = {
+        enableACME = true;
+        forceSSL = true;
+        locations."/" = {
+          proxyPass = "http://127.0.0.1:${cfg.port}";
+          extraConfig = 
+            "proxy_ssl_server_name on;" +
+            "proxy_pass_header Authorization;";
+        };
+      };
+    };
 
     #custom.server.backup = {
     #  paths = [

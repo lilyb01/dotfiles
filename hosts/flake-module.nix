@@ -93,7 +93,7 @@ in
     nixosConfigurations = builtins.mapAttrs mkSystem {
       cantata = { system = "x86_64-linux"; };
       #sonata = { system = "aarch64-linux"; };
-      steamdeck = { system = "x86_64-linux"; };
+      maggie = { system = "x86_64-linux"; };
       tapioca = { system = "x86_64-linux"; modules = [./tapioca/disko-config.nix]; }; #version = "nixpkgs"; hmversion="home-manager";
       hopscotch = { system = "x86_64-linux";};
     };

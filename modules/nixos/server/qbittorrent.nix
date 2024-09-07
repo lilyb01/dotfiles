@@ -16,7 +16,7 @@ let
         description = "The IP address to which the webui will bind.";
       };
       port = lib.mkOption {
-        default = 8080;
+        default = 9093;
         type = lib.types.int;
         description = "The port to which the webui will bind.";
       };
@@ -167,11 +167,17 @@ in
       };
     };
 
-
-    #custom.server.nginx.virtualHosts = {
-    #  qbittorrent = {
-    #    port = cfg.webUIAddress.port;
-    #  };
-    #};
+    services.nginx.virtualHosts = {
+      "torrent.${config.networking.domain}" = {
+        enableACME = true;
+        forceSSL = true;
+        locations."/" = {
+          proxyPass = "http://127.0.0.1:${cfg.webUIAddress.port}";
+          extraConfig = 
+            "proxy_ssl_server_name on;" +
+            "proxy_pass_header Authorization;";
+        };
+      };
+    };
   };
 }

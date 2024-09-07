@@ -1,7 +1,7 @@
 { ... }: {
   disko.devices = {
     disk = {
-      sda = {
+      tapioca = {
         device = "/dev/sda";
         type = "disk";
         content = {
@@ -16,12 +16,11 @@
                     mountpoint = "/boot";
                 };
             };
-            tapioca_root = {
+            root = {
               size = "100%";
-              priority = 2;
-              content = {
+                content = {
                 type = "filesystem";
-                format = "bcachefs";
+                format = "btrfs";
                 mountpoint = "/";
               };
             };

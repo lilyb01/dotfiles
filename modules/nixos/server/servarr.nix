@@ -27,7 +27,7 @@ let
         enableACME = true;
         forceSSL = true;
         locations."/" = {
-          proxyPass = "http://127.0.0.1:" + ports.${service};
+          proxyPass = "http://127.0.0.1:" + toString ports.${service};
           extraConfig = 
             "proxy_ssl_server_name on;" +
             "proxy_pass_header Authorization;";

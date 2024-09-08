@@ -56,7 +56,7 @@ let
 
   mkFullConfig = service: lib.mkIf cfg.${service}.enable (lib.mkMerge [
     (mkService service)
-    #(mkRedirection service)
+    (mkRedirection service)
   ]);
 in
 {

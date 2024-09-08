@@ -33,6 +33,7 @@
     server.fail2ban.enable = true;
     server.nextcloud.enable = true;
     server.nextcloud.passwordFile = "/etc/nextcloud-admin-pass";
+    server.gitea.enable = true;
     server.nginx.enable = true;
     server.nginx.acme.credentialsFile = "/var/lib/acme/creds.env";
     server.pms.enable = true;

@@ -134,6 +134,11 @@ in
 
     systemd.packages = [ cfg.package ];
 
+      environment = {
+        QBT_PROFILE=cfg.dataDir;
+        QBT_WEBUI_PORT=toString cfg.webUIAddress.port;
+      };
+
     users.users = mkIf (cfg.systemService && cfg.user == defaultUser) {
       ${defaultUser} =
         {

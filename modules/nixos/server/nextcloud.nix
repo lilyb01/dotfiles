@@ -34,7 +34,7 @@ in
       enable = true;
       package = pkgs.nextcloud29;
       hostName = "nextcloud.${config.networking.domain}";
-      home = "/var/lib/nextcloud";
+      home = "/var/lib/nextcloudTWO"; #shit broke with /var/lib/nextcloud i genuinely cannot explain what happened
       maxUploadSize = cfg.maxSize;
       configureRedis = true;
       config = {

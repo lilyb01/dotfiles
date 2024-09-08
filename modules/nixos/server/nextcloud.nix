@@ -20,7 +20,7 @@ in
     };
     passwordFile = mkOption {
       type = types.str;
-      example = "/var/lib/nextcloud/password.txt";
+      example = "/etc/nextcloud-admin-pass";
       description = ''
         Path to a file containing the admin's password, must be readable by
         'nextcloud' user.
@@ -29,6 +29,7 @@ in
   };
 
   config = lib.mkIf cfg.enable {
+    environment.etc."nextcloud-admin-pass".text = "changemechangeme";
     services.nextcloud = {
       enable = true;
       package = pkgs.nextcloud29;
@@ -39,8 +40,8 @@ in
       config = {
         adminuser = cfg.admin;
         adminpassFile = cfg.passwordFile;
-        dbtype = "pgsql";
-        dbhost = "/run/postgresql";
+      #  dbtype = "pgsql";
+      #  dbhost = "/run/postgresql";
       };
 
       https = true;
@@ -49,6 +50,11 @@ in
         overwriteprotocol = "https"; # Nginx only allows SSL
       };
 
+      extraApps = {
+        inherit (config.services.nextcloud.package.packages.apps) news contacts calendar tasks;
+      };
+      extraAppsEnable = true;
+
       notify_push = {
         enable = true;
         # Allow using the push service without hard-coding my IP in the configuration
@@ -56,23 +62,17 @@ in
       };
     };
 
-    services.postgresql = {
-      enable = true;
-      ensureDatabases = [ "nextcloud" ];
-      ensureUsers = [
-        {
-          name = "nextcloud";
-          ensureDBOwnership = true;
-        }
-      ];
-    };
+#    services.postgresql = {
+#      enable = true;
+#      ensureDatabases = [ "nextcloud" ];
+#      ensureUsers = [
+#        {
+#          name = "nextcloud";
+#          ensureDBOwnership = true;
+#        }
+#      ];
+#    };
 
-    systemd.services."nextcloud-setup" = {
-      requires = [ "postgresql.service" ];
-      after = [ "postgresql.service" ];
-    };
-
-    # The service above configures the domain, no need for my wrapper
     services.nginx.virtualHosts."nextcloud.${config.networking.domain}" = {
       forceSSL = true;
       useACMEHost = config.networking.domain;

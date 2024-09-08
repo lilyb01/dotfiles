@@ -20,7 +20,7 @@ in
 
     services.nginx.virtualHosts = {
       "plex.${config.networking.domain}" = {
-        enableACME = false; # TODO
+        enableACME = true; # TODO
         forceSSL = true;
         locations."/" = {
           proxyPass = "http://127.0.0.1:${toString port}";

@@ -11,7 +11,7 @@ let
   webUIAddressSubmodule = lib.types.submodule {
     options = {
       address = lib.mkOption {
-        default = "127.0.0.1";
+        default = "0.0.0.0";
         type = lib.types.str;
         description = "The IP address to which the webui will bind.";
       };

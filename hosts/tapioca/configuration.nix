@@ -31,7 +31,7 @@
     };
     virt.podman.enable = true;
     server.fail2ban.enable = true;
-    server.nextcloud.enable = true;
+    server.nextcloud.enable = false;
     server.nextcloud.passwordFile = "/etc/nextcloud-admin-pass";
     server.nginx.enable = true;
     server.nginx.acme.credentialsFile = "/var/lib/acme/creds.env";

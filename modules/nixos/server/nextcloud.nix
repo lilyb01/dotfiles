@@ -34,7 +34,7 @@ in
       enable = true;
       package = pkgs.nextcloud29;
       hostName = "nextcloud.${config.networking.domain}";
-      home = "/var/lib/nextcloud";
+      home = "/var/lib/nextcloudTWO";
       maxUploadSize = cfg.maxSize;
       configureRedis = true;
       config = {

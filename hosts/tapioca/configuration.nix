@@ -37,6 +37,7 @@
     server.nginx.acme.credentialsFile = "/var/lib/acme/creds.env";
     server.pms.enable = true;
     server.qBittorrent.enable = true;
+    server.qBittorrent.openFirewall = true;
     server.sabnzbd.enable = true;
     server.servarr = {
       enable = true;

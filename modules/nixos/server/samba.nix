@@ -21,7 +21,7 @@ in
         enable = true;
         securityType = "user";
         openFirewall = true;
-        extraConfig = ''
+        settings = ''
             workgroup = WORKGROUP
             server string = ${config.networking.hostName}
             netbios name = ${config.networking.hostName}

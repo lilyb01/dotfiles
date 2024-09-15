@@ -18,7 +18,7 @@ let
         inputs.nur.nixosModules.nur
         inputs.chaotic.nixosModules.default
         inputs.disko.nixosModules.default
-        inputs.sops-nix.nixosModules.sops
+        #inputs.sops-nix.nixosModules.sops
         inputs.${hmversion}.nixosModules.home-manager
         {
           networking.hostName = lib.mkDefault name;

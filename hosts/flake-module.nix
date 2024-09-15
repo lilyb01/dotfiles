@@ -32,6 +32,18 @@ let
       ];
     };
 
+  mkDarwinSystem = name:
+    { system
+    , modules ? []
+    , ...
+    }: inputs.darwin.lib.darwinSystem {
+      inherit system specialArgs;
+      modules = modules ++ [
+        ./${name}-darwin/configuration.nix
+        inputs.home-manager.darwinModules.home-manager
+      ];
+    };
+
   mkSystemUnstable = name:
     { system
     , username ? "lily"
@@ -96,6 +108,10 @@ in
       maggie = { system = "x86_64-linux"; };
       tapioca = { system = "x86_64-linux"; modules = [./tapioca/disko-config.nix]; }; #version = "nixpkgs"; hmversion="home-manager";
       hopscotch = { system = "x86_64-linux";};
+    };
+
+    darwinConfigurations = builtins.mapAttrs mkDarwinSystem {
+      Sonata = { system = "aarch64-darwin"; };
     };
 
     # Standalone home-manager configurations

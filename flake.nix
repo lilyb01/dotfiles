@@ -10,6 +10,10 @@
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    # nix-darwin (mac stuff)
+    darwin.url = "github:lnl7/nix-darwin";
+    darwin.inputs.nixpkgs.follows = "nixpkgs";
+
     # Home manager
     home-manager.url = "github:nix-community/home-manager";
     home-manager.inputs.nixpkgs.follows = "nixpkgs";
@@ -61,7 +65,7 @@
   outputs = inputs@ { flake-parts, ... }:
 
     flake-parts.lib.mkFlake { inherit inputs; } {
-      systems = [ "x86_64-linux" "aarch64-linux"];
+      systems = [ "x86_64-linux" "aarch64-linux" "aarch64-darwin"];
 
       imports = [
         ./hosts/flake-module.nix

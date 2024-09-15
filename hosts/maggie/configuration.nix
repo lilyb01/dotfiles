@@ -13,7 +13,7 @@
     gamescope.enable = true;
     steamdeck.enable = true;
     deckyloader.enable = true;
-    boot.manager = "grub";
+    boot.manager = "systemd-boot";
     tailscale.enable = true;
   };
 

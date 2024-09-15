@@ -17,8 +17,6 @@ in
 
   config = {
 
-      boot.supportedFilesystems = [ "bcachefs" ];
-
       #boot.loader.systemd-boot = lib.mkIf (cfg.manager == "grub") {
       #  enable = false;
       #};

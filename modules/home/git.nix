@@ -11,6 +11,7 @@
         pull.rebase = true;
         rebase.autosquash = true;
         help.autoCorrect = "prompt";
+        safe.directory = "*";
       };
       delta.enable = true;
     };

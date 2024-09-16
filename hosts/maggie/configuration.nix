@@ -7,6 +7,7 @@
 
   custom = {
     boot.splash = true;
+    desktop.gnome = true;
     desktop.kde = true;
     flatpak.enable = true;
     gaming.enable = true;

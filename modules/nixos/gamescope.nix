@@ -25,7 +25,7 @@ in
             enable = true;
             autoStart = true;
             user = "lily";
-            desktopSession = "plasmawayland";
+            desktopSession = "plasma";
         };
         devices.steamdeck = lib.mkIf cfgdeck.enable {
             enable = true;

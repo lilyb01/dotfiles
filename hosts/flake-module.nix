@@ -40,7 +40,18 @@ let
       inherit system specialArgs;
       modules = modules ++ [
         ./${name}-darwin/configuration.nix
+        self.darwinModules.common
+        self.darwinModules.darwin
         inputs.home-manager.darwinModules.home-manager
+        {
+          networking.hostName = lib.mkDefault name;
+          home-manager = {
+            useGlobalPkgs = true;
+            useUserPackages = true;
+            extraSpecialArgs = specialArgs;
+            sharedModules = [ self.homeModules.home ];
+          };
+        }
       ];
     };
 

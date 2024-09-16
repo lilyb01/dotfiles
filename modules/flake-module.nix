@@ -45,6 +45,11 @@ in
       nixos = wrap ./nixos;
     };
 
+    darwinModules = {
+      common = wrap ./common;
+      darwin = wrap ./darwin;
+    };
+
     homeModules = {
       common = wrap ./common;
       home = wrap ./home;

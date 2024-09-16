@@ -26,7 +26,7 @@ let
             useGlobalPkgs = true;
             useUserPackages = true;
             extraSpecialArgs = specialArgs;
-            sharedModules = [ self.homeModules.home ];
+            sharedModules = [ self.homeModules.home inputs.plasma-manager.homeManagerModules.plasma-manager ];
           };
         }
       ];

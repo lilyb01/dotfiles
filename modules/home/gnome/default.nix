@@ -5,7 +5,7 @@
 }:
 let
   inherit (builtins) map;
-  inherit (lib) mkOption mkDefault;
+  inherit (lib) mkOption mkEnableOption mkDefault mkIf;
 
   cfg = config.custom.gnome;
 in
@@ -15,6 +15,8 @@ in
   ];
 
   options.custom.gnome = {
+    enable = mkEnableOption "Gnome desktop";
+
     extensions = mkOption {
       type = with lib.types; listOf package;
       description = "Gnome extension packages to install";
@@ -42,7 +44,7 @@ in
     };
   };
 
-  config = {
+  config = mkIf cfg.enable {
     custom.gnome = {
       favorites = [
         "org.gnome.Nautilus.desktop"

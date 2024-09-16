@@ -20,7 +20,7 @@ in
 
       # This will add each flake input as a registry
       # To make nix3 commands consistent with your flake
-      registry = lib.mapAttrs (_: value: { flake = value; }) inputs;
+      # registry = lib.mapAttrs (_: value: { flake = value; }) inputs;
 
       settings = {
         # Set nix-path in nix.settings because nix.nixPath isn't supported on home-manager
@@ -37,7 +37,7 @@ in
       # Enable garbage collection
       gc = {
         automatic = true;
-        ${frequency} = "weekly";
+        # ${frequency} = "weekly";
         options = "--delete-older-than 30d";
       };
     };

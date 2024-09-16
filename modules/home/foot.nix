@@ -16,7 +16,7 @@ in
   options.custom.terminal.foot = {
     enable = mkOption {
       type = types.bool;
-      default = true;
+      default = false;
       description = "Enable foot terminal";
     };
   };

@@ -3,6 +3,7 @@
   config = {
     programs.git = {
       enable = true;
+      lfs.enable = true;
       userName = "Lily B.";
       userEmail = "lily@buny.plus";
       extraConfig = {

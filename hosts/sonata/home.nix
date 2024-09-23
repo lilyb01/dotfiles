@@ -56,5 +56,13 @@
         source = ../../wallpaper/lockscreen-dark.jpg;
       }; 
 
+    nixpkgs = {
+      config = {
+        allowUnfree = true;
+        allowUnfreePredicate = (_: true);
+        allowUnsupportedSystem = true;
+      };
+    };
+
     home.stateVersion = "24.05";
 }

@@ -71,14 +71,14 @@
         widgets = [
           # We can configure the widgets by adding the name and config
           # attributes. For example to add the the kickoff widget and set the
-          # icon to "nix-snowflake-white" use the below configuration. This will
+          # icon to "nix-snowflake" use the below configuration. This will
           # add the "icon" key to the "General" group for the widget in
           # ~/.config/plasma-org.kde.plasma.desktop-appletsrc.
           #{
           #  name = "org.kde.plasma.kickoff";
           #  config = {
           #    General = {
-          #      icon = "nix-snowflake-white";
+          #      icon = "nix-snowflake";
           #      alphaSort = true;
           #    };
           #  };
@@ -89,7 +89,7 @@
           {
             kickoff = {
               sortAlphabetically = true;
-              icon = "nix-snowflake-white";
+              icon = "nix-snowflake";
             };
           }
           # Adding configuration to the widgets can also for example be used to
@@ -118,7 +118,7 @@
           {
             kickoff = {
               sortAlphabetically = true;
-              icon = "nix-snowflake-white";
+              icon = "nix-snowflake";
             };
           }
           {

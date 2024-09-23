@@ -127,7 +127,7 @@ in
 
     # Standalone home-manager configurations
     homeConfigurations = builtins.mapAttrs mkHome {
-      sonata = { system = "aarch64-linux"; };
+      sonata = { system = "aarch64-linux"; modules = [ inputs.plasma-manager.homeManagerModules.plasma-manager ]; };
     };
   };
 }

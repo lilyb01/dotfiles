@@ -126,6 +126,8 @@ in
     };
 
     # Standalone home-manager configurations
-    homeConfigurations = builtins.mapAttrs mkHome { };
+    homeConfigurations = builtins.mapAttrs mkHome {
+      sonata = { system = "aarch64-linux"; };
+    };
   };
 }

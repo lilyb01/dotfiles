@@ -1,7 +1,19 @@
-{ ... }:
+{ pkgs
+, ... }:
 {
+  home.packages = with pkgs; [
+    #libsForQt5.qtstyleplugin-kvantum
+    #tela-circle-icon-theme
+    #papirus-icon-theme
+    #materia-kde-theme
+    #capitaine-cursors
+    #graphite-kde-theme
+    #qogir-kde
+  ];
+
   programs.plasma = {
     enable = true;
+    overrideConfig = true; 
 
     #
     # Some high-level settings:
@@ -16,6 +28,9 @@
       };
       iconTheme = "Papirus-Dark";
       wallpaper = "${../../../wallpaper/wallpaper.jpg}";
+     #windowDecorations = {
+     #   theme = "";
+     # };
     };
 
     hotkeys.commands."launch-konsole" = {
@@ -42,7 +57,7 @@
         pointSize = 10;
       };
       small = {
-        family = "SF Compacthl Display";
+        family = "SF Compact Display";
         pointSize = 8;
       };
     };
@@ -51,21 +66,23 @@
       # Windows-like panel at the bottom
       {
         location = "bottom";
+        height = 46;
+        screen = "all";
         widgets = [
           # We can configure the widgets by adding the name and config
           # attributes. For example to add the the kickoff widget and set the
           # icon to "nix-snowflake-white" use the below configuration. This will
           # add the "icon" key to the "General" group for the widget in
           # ~/.config/plasma-org.kde.plasma.desktop-appletsrc.
-          {
-            name = "org.kde.plasma.kickoff";
-            config = {
-              General = {
-                icon = "nix-snowflake-white";
-                alphaSort = true;
-              };
-            };
-          }
+          #{
+          #  name = "org.kde.plasma.kickoff";
+          #  config = {
+          #    General = {
+          #      icon = "nix-snowflake-white";
+          #      alphaSort = true;
+          #    };
+          #  };
+          #}
           # Or you can configure the widgets by adding the widget-specific options for it.
           # See modules/widgets for supported widgets and options for these widgets.
           # For example:
@@ -86,57 +103,24 @@
               ];
             };
           }
-          # Or you can do it manually, for example:
-          {
-            name = "org.kde.plasma.icontasks";
-            config = {
-              General = {
-                launchers = [
-                  "applications:org.kde.dolphin.desktop"
-                  "applications:org.kde.konsole.desktop"
-                ];
-              };
-            };
-          }
           # If no configuration is needed, specifying only the name of the
           # widget will add them with the default configuration.
           "org.kde.plasma.marginsseparator"
-          # If you need configuration for your widget, instead of specifying the
-          # the keys and values directly using the config attribute as shown
-          # above, plasma-manager also provides some higher-level interfaces for
-          # configuring the widgets. See modules/widgets for supported widgets
-          # and options for these widgets. The widgets below shows two examples
-          # of usage, one where we add a digital clock, setting 12h time and
-          # first day of the week to Sunday and another adding a systray with
-          # some modifications in which entries to show.
-          {
-            digitalClock = {
-              calendar.firstDayOfWeek = "sunday";
-              time.format = "12h";
-            };
-          }
-          {
-            systemTray.items = {
-              # We explicitly show bluetooth and battery
-              shown = [
-                "org.kde.plasma.battery"
-                "org.kde.plasma.bluetooth"
-              ];
-              # And explicitly hide networkmanagement and volume
-              hidden = [
-                "org.kde.plasma.networkmanagement"
-                "org.kde.plasma.volume"
-              ];
-            };
-          }
         ];
-        hiding = "autohide";
+        #hiding = "autohide";
       }
       # Application name, Global menu and Song information and playback controls at the top
       {
         location = "top";
+        screen = "all";
         height = 26;
         widgets = [
+          {
+            kickoff = {
+              sortAlphabetically = true;
+              icon = "nix-snowflake-white";
+            };
+          }
           {
             applicationTitleBar = {
               behavior = {
@@ -163,9 +147,9 @@
               ];
               windowTitle = {
                 font = {
-                  bold = false;
+                  bold = true;
                   fit = "fixedSize";
-                  size = 12;
+                  size = 10;
                 };
                 hideEmptyTitle = true;
                 margins = {
@@ -201,31 +185,50 @@
               };
             };
           }
+          {
+            systemTray.items = {
+              # We explicitly show bluetooth and battery
+              shown = [
+                "org.kde.plasma.battery"
+                "org.kde.plasma.bluetooth"
+              ];
+              # And explicitly hide networkmanagement and volume
+              hidden = [
+                "org.kde.plasma.networkmanagement"
+                "org.kde.plasma.volume"
+              ];
+            };
+          }
+          {
+            digitalClock = {
+              calendar.firstDayOfWeek = "sunday";
+              time.format = "12h";
+            };
+          }   
         ];
       }
     ];
 
-    window-rules = [
-      {
-        description = "Dolphin";
-        match = {
-          window-class = {
-            value = "dolphin";
-            type = "substring";
-          };
-          window-types = [ "normal" ];
-        };
-        apply = {
-          noborder = {
-            value = true;
-            apply = "force";
-          };
-          # `apply` defaults to "apply-initially"
-          maximizehoriz = true;
-          maximizevert = true;
-        };
-      }
-    ];
+    #window-rules = [
+    #  {
+    #    description = "Dolphin";
+    #    match = {
+    #      window-class = {
+    #        value = "dolphin";
+    #        type = "substring";
+    #     window-types = [ "normal" ];
+    #    };
+    #    apply = {
+    #      noborder = {
+    #        value = true;
+    #        apply = "force";
+    #      };
+    #      # `apply` defaults to "apply-initially"
+    #      maximizehoriz = true;
+    #      maximizevert = true;
+    #    };
+    #  }
+    #];
 
     powerdevil = {
       AC = {
@@ -252,7 +255,7 @@
       edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
       cornerBarrier = false;
 
-      scripts.polonium.enable = true;
+    #  scripts.polonium.enable = true;
     };
 
     kscreenlocker = {
@@ -269,7 +272,7 @@
       };
 
       kwin = {
-        "Expose" = "Meta+,";
+        "Expose" = "Meta+Space";
         "Switch Window Down" = "Meta+J";
         "Switch Window Left" = "Meta+H";
         "Switch Window Right" = "Meta+L";
@@ -284,11 +287,6 @@
     configFile = {
       baloofilerc."Basic Settings"."Indexing-Enabled" = false;
       kwinrc."org.kde.kdecoration2".ButtonsOnLeft = "SF";
-      kwinrc.Desktops.Number = {
-        value = 8;
-        # Forces kde to not change this value (even through the settings app).
-        immutable = true;
-      };
       kscreenlockerrc = {
         Greeter.WallpaperPlugin = "org.kde.potd";
         # To use nested groups use / as a separator. In the below example,

@@ -1,5 +1,7 @@
-{ ... }: {
-  # TODO get name, email, & key from config or user
+{ pkgs
+, config
+, ... 
+}: {
   config = {
     xdg.configFile."openxr/1/active_runtime.json".text = ''
     {

@@ -1,4 +1,4 @@
-{ config, lib, ... }:
+{ config, lib, pkgs, ... }:
 let
   cfg = config.custom.flatpak;
 in
@@ -9,6 +9,10 @@ in
 
   config = lib.mkIf cfg.enable {
     services.flatpak.enable = true;
+
+    environment.systemPackages = lib.mkIf config.custom.desktop.kde [
+      pkgs.libsForQt5.discover
+    ];
 
     # TODO: add repo in a systemd service
     # flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo

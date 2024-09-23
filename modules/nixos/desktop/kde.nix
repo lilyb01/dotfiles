@@ -24,7 +24,6 @@ in
       programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 
       environment.systemPackages = with pkgs; [
-          libsForQt5.discover
           kdePackages.kate
           gparted
       ];

@@ -5,14 +5,14 @@
 }:
 let
   inherit (lib) mkEnableOption mkIf;
-  cfg = config.custom.vrhome;
+  cfg = config.custom.vr;
 in
 {
-  options.custom.vrhome = {
-    vscode = mkEnableOption "VR home setup";
+  options.custom.vr = {
+    home = mkEnableOption "VR home setup";
   };
 
-  config = mkIf cfg.vrhome {
+  config = mkIf cfg.home {
     xdg.configFile."openxr/1/active_runtime.json".text = ''
     {
         "file_format_version": "1.0.0",

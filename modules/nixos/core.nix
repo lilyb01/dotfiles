@@ -11,6 +11,7 @@
       age
       wlroots
       hyfetch # highly important
+      fastfetch
       ktailctl
     ];
 
@@ -25,5 +26,6 @@
     services.udisks2.enable = true;
 
     programs.zsh.enable = true;
+    programs.fish.enable = true;
   };
 }

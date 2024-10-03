@@ -60,13 +60,13 @@
     # declarative flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
 
-    chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
-    jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
-    jovian.follows = "chaotic/jovian";
+    #chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
+    #jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
+    #jovian.follows = "chaotic/jovian";
 
     nur.url = "github:nix-community/NUR";
 
-    apple-fonts.url = "github:Lyndeno/apple-fonts.nix";
+    apple-fonts.url = "github:lilyb01/apple-fonts.nix";
   };
 
   outputs = inputs@ { flake-parts, ... }:

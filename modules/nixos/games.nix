@@ -10,6 +10,7 @@ in
 
     programs.steam = {
       enable = true;
+      # package = pkgs.steamPackages.steam;
       remotePlay.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
       extraCompatPackages = with pkgs; [

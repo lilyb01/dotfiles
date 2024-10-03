@@ -62,6 +62,14 @@
       };
     };
 
+    desktop = {
+      icons = {
+        arrangement = "topToBottom";
+        alignment = "right";
+        size = 2;
+      };
+    };
+
     panels = [
       # Windows-like panel at the bottom
       {
@@ -69,6 +77,12 @@
         height = 46;
         screen = "all";
         widgets = [
+          #{
+          #  panelSpacer = {
+          #    length = 2;
+          #    settings.General.expanding = false;
+          #  };
+          #}
           # We can configure the widgets by adding the name and config
           # attributes. For example to add the the kickoff widget and set the
           # icon to "nix-snowflake" use the below configuration. This will
@@ -92,20 +106,27 @@
               icon = "nix-snowflake";
             };
           }
-          # Adding configuration to the widgets can also for example be used to
-          # pin apps to the task-manager, which this example illustrates by
-          # pinning dolphin and konsole to the task-manager by default with widget-specific options.
+          # TODO manage in config
           {
             iconTasks = {
               launchers = [
                 "applications:org.kde.dolphin.desktop"
                 "applications:org.kde.konsole.desktop"
+                "applications:firefox-devedition.desktop"
+                "applications:plexamp.desktop"
+                "applications:obsidian.desktop"
+                "applications:code.desktop"
+                "applications:Clip Studio Paint--CLIP Studio Paint--1725200014.930108.desktop"
+                "applications:Toon Boom Harmony--Toon Boom Harmony 20--1726138940.343277.desktop"
+                "applications:vesktop.desktop"
+                "applications:org.telegram.desktop.desktop"
               ];
             };
           }
           # If no configuration is needed, specifying only the name of the
           # widget will add them with the default configuration.
           "org.kde.plasma.marginsseparator"
+          "org.kde.plasma.showdesktop"
         ];
         #hiding = "autohide";
       }
@@ -115,6 +136,12 @@
         screen = "all";
         height = 26;
         widgets = [
+          {
+            panelSpacer = {
+              length = 2;
+              settings.General.expanding = false;
+            };
+          }
           {
             kickoff = {
               sortAlphabetically = true;
@@ -132,7 +159,15 @@
                 showDisabledElements = "deactivated";
                 verticalAlignment = "center";
               };
-              overrideForMaximized.enable = false;
+              overrideForMaximized = {
+                enable = false;
+                elements = [
+                  "windowCloseButton"
+                  "windowMinimizeButton"
+                  "windowMaximizeButton"
+                  "windowTitle"
+                ];
+              };
               titleReplacements = [
                 {
                   type = "regexp";
@@ -142,7 +177,7 @@
                 {
                   type = "regexp";
                   originalTitle = ''\\bDolphin\\b'';
-                  newTitle = "File manager";
+                  newTitle = "File Manager";
                 }
               ];
               windowTitle = {
@@ -159,32 +194,12 @@
                   top = 0;
                 };
                 source = "appName";
+                undefinedWindowTitle = "Desktop";
               };
             };
           }
           "org.kde.plasma.appmenu"
           "org.kde.plasma.panelspacer"
-          {
-            plasmusicToolbar = {
-              panelIcon = {
-                albumCover = {
-                  useAsIcon = false;
-                  radius = 8;
-                };
-                icon = "view-media-track";
-              };
-              preferredSource = "spotify";
-              musicControls.showPlaybackControls = true;
-              songText = {
-                displayInSeparateLines = true;
-                maximumWidth = 640;
-                scrolling = {
-                  behavior = "alwaysScroll";
-                  speed = 3;
-                };
-              };
-            };
-          }
           {
             systemTray.items = {
               # We explicitly show bluetooth and battery
@@ -194,17 +209,38 @@
               ];
               # And explicitly hide networkmanagement and volume
               hidden = [
-                "org.kde.plasma.networkmanagement"
-                "org.kde.plasma.volume"
               ];
+            };
+          }
+          {
+            panelSpacer = {
+              length = 4;
+              settings.General.expanding = false;
             };
           }
           {
             digitalClock = {
               calendar.firstDayOfWeek = "sunday";
               time.format = "12h";
+              font = {
+                family = "SF Pro Display";
+                size = 10;
+                weight = 600;
+              };
+              settings = {
+                Appearance = {
+                  showDate = false;
+                };
+              };
             };
-          }   
+          }
+          {
+            panelSpacer = {
+              length = 4;
+              settings.General.expanding = false;
+            };
+          }
+          "org.kde.milou"
         ];
       }
     ];
@@ -254,7 +290,10 @@
     kwin = {
       edgeBarrier = 0; # Disables the edge-barriers introduced in plasma 6.1
       cornerBarrier = false;
-
+      effects = {
+        minimization.animation = "magiclamp";
+        wobblyWindows.enable = true;
+      };
     #  scripts.polonium.enable = true;
     };
 
@@ -287,6 +326,8 @@
     configFile = {
       baloofilerc."Basic Settings"."Indexing-Enabled" = false;
       kwinrc."org.kde.kdecoration2".ButtonsOnLeft = "SF";
+      kwinrc.Plugins.screenedgeEnabled = false;
+      dolphinrc.DetailsMode.PreviewSize = 16;
       kscreenlockerrc = {
         Greeter.WallpaperPlugin = "org.kde.potd";
         # To use nested groups use / as a separator. In the below example,

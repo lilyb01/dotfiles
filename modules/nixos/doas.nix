@@ -1,6 +1,13 @@
 { pkgs, ... }: {
   security = {
-    doas.enable = true;
+    doas = {
+      enable = true;
+      extraRules = [{
+        users = ["lily"];
+        keepEnv = true;
+        persist = true;
+      }];
+    };
     sudo.enable = false;
   };
 

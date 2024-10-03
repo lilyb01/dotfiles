@@ -22,7 +22,7 @@ in
 
     jovian = {
         steam = { 
-            enable = true;
+            enable = false;
             autoStart = true;
             user = "lily";
             desktopSession = "plasma";

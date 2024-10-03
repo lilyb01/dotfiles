@@ -11,8 +11,8 @@
     desktop.kde = true;
     flatpak.enable = true;
     gaming.enable = true;
-    gamescope.enable = false;
-    steamdeck.enable = false;
+    #gamescope.enable = false;
+    #steamdeck.enable = false;
     boot.manager = "systemd-boot";
     tailscale.enable = true;
     login.manager = "sddm";

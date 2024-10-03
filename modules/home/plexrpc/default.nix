@@ -19,15 +19,14 @@ in
   config = mkIf cfg.enable {
 
     systemd.user.services.plexrpc = {
-      enable = true;
-      after = [ "network.target" ];
-      wantedBy = [ "default.target" ];
-      description = "Plex Discord Rich Presence";
-      serviceConfig = {
-          User = "lily";
-          Type = "simple";
+      Unit.Description = "Plex Discord Rich Presence";
+      Install = {
+        WantedBy = [ "default.target" ];
+      };
+      Service = {
           WorkingDirectory = "/home/lily/nix-config-old/home/plexrpc/";
           ExecStart = ''/home/lily/nix-config-old/home/plexrpc/venv/bin/python3 main.py'';
+          Restart = "on-failure";
       };
     };
     

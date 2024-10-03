@@ -20,6 +20,8 @@ in
           enable = true;
       };
 
+      programs.kdeconnect.enable = true;
+
       # workaround for if gnome is also installed
       programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
 

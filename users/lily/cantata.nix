@@ -44,6 +44,7 @@
           warpinator
           tigervnc
         ];
+        #vr.home = true;
     };
 
       home.file."wallpaper.jpg" = {

@@ -11,11 +11,13 @@
     desktop.kde = true;
     flatpak.enable = true;
     gaming.enable = true;
+    uxplay.enable = true;
     #gamescope.enable = false;
     #steamdeck.enable = false;
     boot.manager = "systemd-boot";
     tailscale.enable = true;
     login.manager = "sddm";
+    virt.podman.enable = true;
     virt.waydroid.enable = true;
     server.samba.enable = true;
     server.samba.shares = {
@@ -45,6 +47,10 @@
   boot.initrd.kernelModules = [ "amdgpu" ];
 
   home-manager.backupFileExtension = "backup";
+
+  networking.firewall = {
+    allowedTCPPorts = [ 42000 42001 22000 ];
+  };
 
   # https://nixos.wiki/wiki/FAQ/When_do_I_update_stateVersion
   system.stateVersion = "24.05";

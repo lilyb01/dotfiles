@@ -13,47 +13,6 @@
   boot.kernelModules = [ "kvm-amd" ];
   boot.extraModulePackages = [ ];
 
-  fileSystems."/" =
-    { device = "/dev/disk/by-uuid/e742cdb8-14a1-43d5-9271-30657ffb0e12";
-      fsType = "btrfs";
-      options = [ "subvol=@" ];
-    };
-
-  fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/3898-5F6F";
-      fsType = "vfat";
-      options = [ "fmask=0022" "dmask=0022" ];
-    };
-
-  fileSystems."/home" =
-    { device = "/dev/disk/by-uuid/3ec8ec06-8f03-4b5f-9aab-ee2eade0cfa5";
-      fsType = "btrfs";
-    };
-  
-  #fileSystems."/mnt/cantata" =
-  #  { device = "/dev/disk/by-uuid/F8908EDF908EA3AA";
-  #    fsType = "ntfs3";
-  #    options = [ "rw" "uid=1000"];
-  #  };
-
-  #fileSystems."/mnt/sonata-n1" =
-  #  { device = "/dev/disk/by-uuid/54800B18800AFFEA";
-  #    fsType = "ntfs3";
-  #    options = [ "rw" "uid=1000"];
-  #  };
-
-  #fileSystems."/mnt/sonata-s1" =
-  #  { device = "/dev/disk/by-uuid/D2C452DFC452C4FF";
-  #    fsType = "ntfs3";
-  #    options = [ "rw" "uid=1000"];
-  #  };
-
-  #fileSystems."/mnt/sonata-s2" =
-  #  { device = "/dev/disk/by-uuid/2E6EC61F6EC5E027";
-  #    fsType = "ntfs3";
-  #    options = [ "rw" "uid=1000"];
-  #  };
-
   swapDevices = [ ];
 
   # Enables DHCP on each ethernet and wireless interface. In case of scripted networking

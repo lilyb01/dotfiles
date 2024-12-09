@@ -114,7 +114,7 @@ in
   flake = {
     # NixOS configurations
     nixosConfigurations = builtins.mapAttrs mkSystem {
-      cantata = { system = "x86_64-linux"; };
+      cantata = { system = "x86_64-linux"; modules = [./cantata/disko-config.nix]; };
       #sonata = { system = "aarch64-linux"; };
       maggie = { system = "x86_64-linux"; };
       tapioca = { system = "x86_64-linux"; modules = [./tapioca/disko-config.nix]; }; #version = "nixpkgs"; hmversion="home-manager";

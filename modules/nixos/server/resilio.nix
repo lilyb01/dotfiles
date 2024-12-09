@@ -42,7 +42,7 @@ let
 in {
   disabledModules = [ "${modulesPath}/services/networking/resilio.nix" ];
 
-  custom.server.resilio = {
+  options.custom.server.resilio = {
     enable = lib.mkEnableOption "Resilio Sync";
     deviceName = lib.mkOption {
       type = lib.types.str;

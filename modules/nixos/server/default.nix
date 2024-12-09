@@ -9,6 +9,7 @@
     ./nginx.nix
     ./plex.nix
     ./qbittorrent.nix
+    ./resilio.nix
     ./samba.nix
     ./sabnzbd.nix
     ./servarr.nix

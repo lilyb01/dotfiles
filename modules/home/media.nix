@@ -48,6 +48,7 @@ in
         plexamp
 
         yt-dlp
+        ffmpeg
     ];
 
     programs.obs-studio = {

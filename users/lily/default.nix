@@ -16,6 +16,8 @@ in {
     extraGroups = [
       "audio"
       "video"
+      "input"
+      "disk"
       "wheel"
       "networkmanager"
     ];

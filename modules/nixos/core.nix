@@ -13,6 +13,11 @@
       hyfetch # highly important
       fastfetch
       ktailctl
+      distrobox
+      unrar
+      htop
+      btop
+      ntfsprogs
     ];
 
     programs.neovim = {

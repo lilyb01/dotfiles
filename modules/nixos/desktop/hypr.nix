@@ -16,8 +16,8 @@ in
     programs.hyprland = {
       enable = true;
       withUWSM = true;
-      package = hyprland;
-      portalPackage = xdg-desktop-portal-hyprland;
+      package = pkgs.hyprland;
+      portalPackage = pkgs.xdg-desktop-portal-hyprland;
     };
     # TODO Implement a working config
   };

@@ -258,7 +258,7 @@
 
     bind = [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      "$mainMod, Enter, exec, $terminal"
+      "$mainMod, Return, exec, $terminal"
       "$mainMod, Q, killactive,"
       "$mainMod SHIFT, E, exit,"
       "$mainMod, E, exec, $fileManager"

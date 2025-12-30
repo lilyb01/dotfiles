@@ -42,17 +42,18 @@
     };
 
     # Hyprland and plugins
-    #hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
-    #hyprland-plugins = {
-    #  url = "github:hyprwm/hyprland-plugins";
-    #  inputs.hyprland.follows = "hyprland";
-    #};
-    #Hyprspace = {
-    #  url = "github:ReshetnikovPavel/Hyprspace";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    
+    hyprland-plugins = {
+      url = "github:hyprwm/hyprland-plugins";
+      inputs.hyprland.follows = "hyprland";
+    };
+    Hyprspace = {
+      url = "github:ReshetnikovPavel/Hyprspace";
 
-    #  # Hyprspace uses latest Hyprland. We declare this to keep them in sync.
-    #  inputs.hyprland.follows = "hyprland";
-    #};
+      # Hyprspace uses latest Hyprland. We declare this to keep them in sync.
+      inputs.hyprland.follows = "hyprland";
+    };
 
     # xdg autostart module
     xdg-autostart.url = "github:Zocker1999NET/home-manager-xdg-autostart";
@@ -66,7 +67,7 @@
 
     nur.url = "github:nix-community/NUR";
 
-    apple-fonts.url = "github:lilyb01/apple-fonts.nix";
+    #apple-fonts.url = "github:lilyb01/apple-fonts.nix";
   };
 
   outputs = inputs@ { flake-parts, ... }:

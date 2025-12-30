@@ -29,7 +29,7 @@ in
     ];
 
     environment.systemPackages = with pkgs; [
-      gnome.file-roller
+      file-roller
       nautilus-open-any-terminal
     ];
   };

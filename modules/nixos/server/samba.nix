@@ -34,7 +34,7 @@ in
             "guest account" = "nobody";
             "map to guest" = "bad user";
         };
-        shares = config.custom.server.samba.shares;
+        settings = config.custom.server.samba.shares;
     };
 
     services.samba-wsdd = {

@@ -15,7 +15,7 @@ let
         ../users
         self.nixosModules.common
         self.nixosModules.nixos
-        inputs.nur.nixosModules.nur
+        #inputs.nur.nixos.default
         #inputs.chaotic.nixosModules.default
         inputs.disko.nixosModules.default
         #inputs.sops-nix.nixosModules.sops

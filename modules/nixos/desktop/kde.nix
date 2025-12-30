@@ -23,7 +23,7 @@ in
       programs.kdeconnect.enable = true;
 
       # workaround for if gnome is also installed
-      programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.ksshaskpass.out}/bin/ksshaskpass";
+      programs.ssh.askPassword = pkgs.lib.mkForce "${pkgs.kdePackages.ksshaskpass.out}/bin/ksshaskpass";
 
       environment.systemPackages = with pkgs; [
           kdePackages.kate

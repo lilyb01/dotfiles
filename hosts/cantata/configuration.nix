@@ -7,8 +7,8 @@
 
   custom = {
     boot.splash = true;
-    desktop.gnome = true;
-    desktop.kde = true;
+    desktop.gnome = false;
+    desktop.kde = false;
     flatpak.enable = true;
     gaming.enable = true;
     uxplay.enable = true;
@@ -16,7 +16,7 @@
     #steamdeck.enable = false;
     boot.manager = "systemd-boot";
     tailscale.enable = true;
-    login.manager = "sddm";
+    login.manager = "dms-greeter";
     virt.podman.enable = true;
     virt.waydroid.enable = true;
     # server.samba.enable = true;

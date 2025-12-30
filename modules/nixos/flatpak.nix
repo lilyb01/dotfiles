@@ -11,7 +11,7 @@ in
     services.flatpak.enable = true;
 
     environment.systemPackages = lib.mkIf config.custom.desktop.kde [
-      pkgs.libsForQt5.discover
+      pkgs.kdePackages.discover
     ];
 
     # TODO: add repo in a systemd service

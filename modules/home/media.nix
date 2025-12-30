@@ -44,7 +44,7 @@ in
         krita
 
         mpv
-        plex-media-player
+        plex-desktop
         plexamp
 
         yt-dlp
@@ -56,7 +56,7 @@ in
       plugins = with pkgs.obs-studio-plugins; [
         wlrobs
         obs-tuna
-        obs-webkitgtk
+        #obs-webkitgtk
         obs-vkcapture
         obs-gstreamer
         obs-text-pthread

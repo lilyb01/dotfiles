@@ -5,25 +5,25 @@
         # icon fonts
         material-design-icons
         corefonts
-        ubuntu_font_family
+        ubuntu-classic
         powerline-fonts
         font-awesome
         source-code-pro
         noto-fonts
-        noto-fonts-cjk
-        noto-fonts-emoji
-        emojione
+        #noto-fonts-cjk
+        noto-fonts-color-emoji
+        #emojione
         kanji-stroke-order-font
         ipafont
         liberation_ttf
 
-        (nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
+        #(nerdfonts.override { fonts = [ "NerdFontsSymbolsOnly" ]; })
 
         # monospace
         cozette
 
         corefonts
-        vistafonts
+        vista-fonts
 
         #inputs.apple-fonts.packages.${pkgs.system}.sf-pro
         #inputs.apple-fonts.packages.${pkgs.system}.sf-compact

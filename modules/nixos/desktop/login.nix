@@ -9,7 +9,7 @@ in
 {
   options.custom.login = {
     manager = mkOption {
-      type = types.enum [ "none" "gdm" "sddm" "lightdm" ];
+      type = types.enum [ "none" "gdm" "sddm" "lightdm" "dms-greeter" ];
       default = "gdm";
     };
   };
@@ -31,6 +31,11 @@ in
         '';
       };
       background = "${../../../wallpaper/login.jpg}";
+    };
+
+    services.displayManager.dms-greeter = {
+        enable = mkIf (cfg.manager == "dms-greeter") true;
+        configHome = "/home/lily";
     };
 
   };

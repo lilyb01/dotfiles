@@ -44,6 +44,7 @@
           warpinator
           tigervnc
         ];
+        terminal.foot.enable = true;
         #vr.home = true;
     };
 

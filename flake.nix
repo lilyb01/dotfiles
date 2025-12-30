@@ -65,7 +65,10 @@
     #jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     #jovian.follows = "chaotic/jovian";
 
-    nur.url = "github:nix-community/NUR";
+    nur = {
+        url = "github:nix-community/NUR";
+        inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     #apple-fonts.url = "github:lilyb01/apple-fonts.nix";
   };

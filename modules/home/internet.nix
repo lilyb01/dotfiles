@@ -22,7 +22,7 @@ in
         weechat
         vesktop
         telegram-desktop
-        anydesk
+        rustdesk
         bitwarden-desktop
         nicotine-plus
         cinnamon.warpinator

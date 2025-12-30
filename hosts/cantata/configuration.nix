@@ -9,6 +9,7 @@
     boot.splash = true;
     desktop.gnome = false;
     desktop.kde = false;
+    desktop.hyprland = true;
     flatpak.enable = true;
     gaming.enable = true;
     uxplay.enable = true;

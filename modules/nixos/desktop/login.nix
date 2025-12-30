@@ -36,6 +36,7 @@ in
     services.displayManager.dms-greeter = {
         enable = mkIf (cfg.manager == "dms-greeter") true;
         configHome = "/home/lily";
+        compositor.name = "hyprland";
     };
 
   };

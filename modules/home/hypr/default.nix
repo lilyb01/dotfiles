@@ -41,7 +41,8 @@
     ################
 
     # See https://wiki.hypr.land/Configuring/Monitors/
-    monitor = ",preferred,auto,auto";
+    monitor = "DP-1, preferred, 2560x0, 1";
+    monitor = "HDMI-A-1, preferred, 0x0, 1";
 
 
     ###################

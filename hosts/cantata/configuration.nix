@@ -19,16 +19,16 @@
     login.manager = "sddm";
     virt.podman.enable = true;
     virt.waydroid.enable = true;
-    server.samba.enable = true;
-    server.samba.shares = {
-      Home = {
-        path = "/home/lily";
-        browseable = "yes";
-        "read only" = "no";
-        "guest ok" = "no";
-        "veto files" = "/.apdisk/.DS_Store/.TemporaryItems/.Trashes/desktop.ini/ehthumbs.db/Network Trash Folder/Temporary Items/Thumbs.db/";
-        "delete veto files" = "yes";
-      };
+    # server.samba.enable = true;
+    #server.samba.shares = {
+    #  Home = {
+    #    path = "/home/lily";
+    #    browseable = "yes";
+    #    "read only" = "no";
+    #    "guest ok" = "no";
+    #    "veto files" = "/.apdisk/.DS_Store/.TemporaryItems/.Trashes/desktop.ini/ehthumbs.db/Network Trash Folder/Temporary Items/Thumbs.db/";
+    #    "delete veto files" = "yes";
+    #  };
     };
   };
 

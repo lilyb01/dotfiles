@@ -10,7 +10,7 @@
     ./plex.nix
     ./qbittorrent.nix
     ./resilio.nix
-    ./samba.nix
+    #./samba.nix
     ./sabnzbd.nix
     ./servarr.nix
   ];

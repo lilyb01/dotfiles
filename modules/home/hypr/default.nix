@@ -1,8 +1,24 @@
-{ pkgs
-, ... }:
+{
+ pkgs
+,config
+,lib
+, ... 
+}:
 {
 
-  wayland.windowManager.hyprland.settings = {
+  wayland.windowManager.hyprland = {
+    enable = true;
+    xwayland.enable = true;
+    systemd = {
+        enable = false;
+        variables = [
+            "--all"
+        ];
+    };
+    package = null;
+    portalPackage = null;
+
+    settings = {
 
     # This is an example Hyprland config file for Nix.
     # Refer to the wiki for more information.
@@ -36,7 +52,7 @@
 
     # Set programs that you use
 
-    "$terminal" = "kitty";
+    "$terminal" = "foot";
     "$fileManager" = "dolphin";
     "$menu" = "wofi --show drun";
 
@@ -199,8 +215,8 @@
 
     # https://wiki.hypr.land/Configuring/Variables/#misc
     misc = {
-      force_default_wallpaper = -1; # Set to 0 or 1 to disable the anime mascot wallpapers
-      disable_hyprland_logo = false; # If true disables the random hyprland logo / anime girl background. :(
+      force_default_wallpaper = 0; # Set to 0 or 1 to disable the anime mascot wallpapers
+      disable_hyprland_logo = true; # If true disables the random hyprland logo / anime girl background. :(
     };
 
 
@@ -225,11 +241,6 @@
       };
     };
 
-    # https://wiki.hypr.land/Configuring/Variables/#gestures
-    gestures = {
-      workspace_swipe = false;
-    };
-
     # Example per-device config
     # See https://wiki.hypr.land/Configuring/Keywords/#per-device-input-configs for more
     device = {
@@ -247,12 +258,12 @@
 
     bind = [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      "$mainMod, Q, exec, $terminal"
-      "$mainMod, C, killactive,"
-      "$mainMod, M, exit,"
+      "$mainMod, ENTER, exec, $terminal"
+      "$mainMod, Q, killactive,"
+      "$mainMod SHIFT, E, exit,"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating,"
-      "$mainMod, R, exec, $menu"
+      "$mainMod, SPACE, exec, $menu"
       "$mainMod, P, pseudo," # dwindle
       "$mainMod, J, togglesplit," # dwindle
 
@@ -261,6 +272,11 @@
       "$mainMod, right, movefocus, r"
       "$mainMod, up, movefocus, u"
       "$mainMod, down, movefocus, d"
+
+      "$mainMod, h, movefocus, l"
+      "$mainMod, l, movefocus, r"
+      "$mainMod, k, movefocus, u"
+      "$mainMod, j, movefocus, d"
 
       # Switch workspaces with mainMod + [0-9]
       "$mainMod, 1, workspace, 1"
@@ -336,5 +352,6 @@
       # Fix some dragging issues with XWayland
       "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
     ];
+  };
   };
 }

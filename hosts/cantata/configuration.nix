@@ -8,7 +8,7 @@
   custom = {
     boot.splash = true;
     desktop.gnome = false;
-    desktop.kde = false;
+    desktop.kde = true;
     desktop.hyprland = true;
     flatpak.enable = true;
     gaming.enable = true;
@@ -44,6 +44,12 @@
     common-pc-ssd
     ./hardware-configuration.nix
   ];
+
+  nix.settings = {
+    substituters = ["https://hyprland.cachix.org"];
+    trusted-substituters = ["https://hyprland.cachix.org"];
+    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+  };
 
   boot.initrd.kernelModules = [ "amdgpu" ];
 

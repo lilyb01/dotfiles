@@ -54,7 +54,7 @@
 
     "$terminal" = "foot";
     "$fileManager" = "dolphin";
-    "$menu" = "wofi --show drun";
+    "$menu" = "dms ipc call spotlight toggle";
 
 
     #################
@@ -258,12 +258,12 @@
 
     bind = [
       # Example binds, see https://wiki.hypr.land/Configuring/Binds/ for more
-      "$mainMod, ENTER, exec, $terminal"
+      "$mainMod, Enter, exec, $terminal"
       "$mainMod, Q, killactive,"
       "$mainMod SHIFT, E, exit,"
       "$mainMod, E, exec, $fileManager"
       "$mainMod, V, togglefloating,"
-      "$mainMod, SPACE, exec, $menu"
+      "$mainMod, Space, exec, $menu"
       "$mainMod, P, pseudo," # dwindle
       "$mainMod, J, togglesplit," # dwindle
 

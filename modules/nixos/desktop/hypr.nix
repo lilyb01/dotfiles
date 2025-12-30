@@ -14,10 +14,10 @@ in
   config = mkIf enabled {
     services.xserver.enable = true;
     programs.hyprland = {
-        enable = true;
-        withUWSM = true;
-        package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-        portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+      enable = true;
+      withUWSM = true;
+      package = hyprland;
+      portalPackage = xdg-desktop-portal-hyprland;
     };
     # TODO Implement a working config
   };

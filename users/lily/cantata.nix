@@ -43,6 +43,10 @@
           nicotine-plus
           warpinator
           tigervnc
+          (discord.override {
+            # withOpenASAR = true; # can do this here too
+            withVencord = true;
+          })
         ];
         terminal.foot.enable = true;
         #vr.home = true;

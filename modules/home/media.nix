@@ -42,6 +42,7 @@ in
         audacity
         easyeffects
         krita
+        kdePackages.kdenlive
 
         mpv
         plex-desktop

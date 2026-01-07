@@ -18,6 +18,10 @@
       htop
       btop
       ntfsprogs
+
+      (yazi.override {
+        _7zz = _7zz-rar;  # Support for RAR extraction
+      })
     ];
 
     programs.neovim = {
@@ -32,6 +36,9 @@
 
     programs.zsh.enable = true;
     programs.fish.enable = true;
+
+    services.gvfs.enable = true; # Mount, trash, and other functionalities
+    services.tumbler.enable = true; # Thumbnail support for images
 
     #programs.bash = {
     #  interactiveShellInit = ''

@@ -18,6 +18,7 @@ let
         #inputs.nur.nixos.default
         #inputs.chaotic.nixosModules.default
         inputs.disko.nixosModules.default
+        inputs.stylix.nixosModules.stylix
         #inputs.sops-nix.nixosModules.sops
         inputs.${hmversion}.nixosModules.home-manager
         {

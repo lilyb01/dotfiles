@@ -12,6 +12,18 @@ in
   options.custom.desktop.hyprland = mkEnableOption "Hyprland desktop";
 
   config = mkIf enabled {
+    environment.systemPackages = with pkgs; [
+      hyprshot
+      hyprpicker
+      hypridle
+
+      kdePackages.qt6ct
+      kdePackages.qtmultimedia
+      kdePackages.kirigami.unwrapped
+      kdePackages.qtdeclarative
+      kdePackages.sonnet
+    ];
+    qt.platformTheme = "qt5ct";
     services.xserver.enable = true;
     programs.hyprland = {
       enable = true;
@@ -19,6 +31,11 @@ in
       package = pkgs.hyprland;
       portalPackage = pkgs.xdg-desktop-portal-hyprland;
     };
-    # TODO Implement a working config
+    programs.thunar.enable = true;
+    programs.xfconf.enable = true;
+    programs.thunar.plugins = with pkgs.xfce; [
+      thunar-archive-plugin
+      thunar-volman
+    ];
   };
 }

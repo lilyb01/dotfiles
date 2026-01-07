@@ -12,7 +12,7 @@ in
     vscode = mkEnableOption "Use VSCode";
   };
 
-  config = mkIf cfg.vscode {
+  config = mkIf cfg.vscode { 
     programs.vscode = {
       enable = true;
 
@@ -20,7 +20,7 @@ in
         enableUpdateCheck = false;
         enableExtensionUpdateCheck = false;
 
-        userSettings = {
+        userSettings = { # test
           window.titleBarStyle = "custom";
         };
 

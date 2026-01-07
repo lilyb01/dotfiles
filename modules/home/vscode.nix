@@ -23,6 +23,7 @@ in
         userSettings = { # test
           window.titleBarStyle = "custom";
           git.enableSmartCommit = true;
+          git.confirmSync = false;
         };
 
         extensions = with pkgs.vscode-extensions; [

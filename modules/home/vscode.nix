@@ -15,28 +15,31 @@ in
   config = mkIf cfg.vscode {
     programs.vscode = {
       enable = true;
-      enableUpdateCheck = false;
-      enableExtensionUpdateCheck = false;
 
-      userSettings = {
-        window.titleBarStyle = "custom";
+      profiles.default = {
+        enableUpdateCheck = false;
+        enableExtensionUpdateCheck = false;
+
+        userSettings = {
+          window.titleBarStyle = "custom";
+        };
+
+        extensions = with pkgs.vscode-extensions; [
+          # General
+          catppuccin.catppuccin-vsc
+          github.codespaces # Using codespaces for CS50
+          usernamehw.errorlens # Inline error messages
+
+          # Languages
+          bbenoist.nix # Nix language support
+          ms-vscode.cpptools # C & C++ Support
+          # ms-python.python # Python support # FIXME https://github.com/NixOS/nixpkgs/issues/298110
+          waderyan.gitblame # Show blame info
+          davidanson.vscode-markdownlint # Markdown language support (preview is already builtin to vscode)
+          bierner.emojisense # 😄 emoji completion
+          bierner.markdown-emoji # Support :emoji: syntax in markdown
+        ];
       };
-
-      extensions = with pkgs.vscode-extensions; [
-        # General
-        catppuccin.catppuccin-vsc
-        github.codespaces # Using codespaces for CS50
-        usernamehw.errorlens # Inline error messages
-
-        # Languages
-        bbenoist.nix # Nix language support
-        ms-vscode.cpptools # C & C++ Support
-        # ms-python.python # Python support # FIXME https://github.com/NixOS/nixpkgs/issues/298110
-        waderyan.gitblame # Show blame info
-        davidanson.vscode-markdownlint # Markdown language support (preview is already builtin to vscode)
-        bierner.emojisense # 😄 emoji completion
-        bierner.markdown-emoji # Support :emoji: syntax in markdown
-      ];
     };
   };
 }

@@ -24,7 +24,7 @@
             "sw" = "sudo nixos-rebuild switch --flake /home/lily/nix-config/.";
         };
 
-        initExtra = ''
+        initContent = ''
             source ~/.p10k.zsh
             hyfetch
         '';

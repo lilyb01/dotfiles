@@ -15,7 +15,7 @@ in
     boot = {
       plymouth = {
         enable = true;
-        theme = "breeze";
+        #theme = "breeze";
       };
       kernelParams = [ "quiet" ];
       initrd.systemd.enable = true;

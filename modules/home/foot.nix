@@ -29,8 +29,8 @@ in
             main = let
                 withSize = "size=${toString size}";
             in {
-                font = "${font}:${withSize}";
-                font-bold = "${font}:style=Bold:${withSize}";
+                #font = "${font}:${withSize}";
+                #font-bold = "${font}:style=Bold:${withSize}";
                 box-drawings-uses-font-glyphs = true;
             };
 
@@ -40,12 +40,12 @@ in
 
             url = {
                 launch = "xdg-open \${url}";
-                protocols = "http, https, ftp, ftps, file";
+                #protocols = "http, https, ftp, ftps, file";
             };
 
             colors = {
-                alpha = opacity;
-                background = "000000";
+                #alpha = opacity;
+                #background = "000000";
             };
         };
     };

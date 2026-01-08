@@ -1,0 +1,69 @@
+diff --git a/src/driver_vive.c b/src/driver_vive.c
+index 272820f..56a5256 100755
+--- a/src/driver_vive.c
++++ b/src/driver_vive.c
+@@ -288,6 +288,21 @@ const struct DeviceInfo KnownDeviceTypes[] = {
+ 	 .endpoints = {{.num = 0x81, .name = "IMU", .type = USB_IF_HMD_IMU},
+ 				   {.num = 0x82, .name = "Lightcap", .type = USB_IF_HMD_LIGHTCAP}},
+ 	 .magics = {MAGIC_CTOR(true, vive_magic_enable_lighthouse), MAGIC_CTOR(true, vive_magic_enable_lighthouse_more)}},
++	{.vid = 0x35bd,
++	 .pid = 0x0101,
++	 .type = USB_DEV_HMD,
++	 .name = "BRD",
++	 .codename = "",
++	 .endpoints = {{.num = 0x81, .name = "Mainboard", .type = USB_IF_HMD_HEADSET_INFO}},
++	 .magics = {MAGIC_CTOR(true, vive_magic_power_on), MAGIC_CTOR(false, vive_magic_power_off)}},
++	{.vid = 0x28de,
++	 .pid = 0x2300,
++	 .type = USB_DEV_HMD_IMU_LH,
++	 .name = "HMD IMU & LH",
++	 .codename = "HMD",
++	 .endpoints = {{.num = 0x81, .name = "IMU", .type = USB_IF_HMD_IMU},
++				   {.num = 0x83, .name = "Lightcap", .type = USB_IF_HMD_LIGHTCAP}},
++	 .magics = {MAGIC_CTOR(true, vive_magic_enable_lighthouse), MAGIC_CTOR(true, vive_magic_enable_lighthouse_more)}},
+ 	{.vid = 0x28de,
+ 	 .pid = 0x2101,
+ 	 .type = USB_DEV_WATCHMAN1,
+@@ -311,18 +326,18 @@ const struct DeviceInfo KnownDeviceTypes[] = {
+ 			 {.num = 0x83, .name = "Buttons", .type = USB_IF_TRACKER0_BUTTONS},
+ 		 },
+ 	 .magics = {MAGIC_CTOR(true, vive_magic_enable_lighthouse), MAGIC_CTOR(true, vive_magic_enable_lighthouse_more)}},
+-	{.vid = 0x28de,
+-	 .pid = 0x2300,
+-	 .type = USB_DEV_TRACKER1,
+-	 .name = "Tracker (2018)",
+-	 .codename = "T20",
+-	 .endpoints =
+-		 {
+-			 {.num = 0x81, .name = "IMU", .type = USB_IF_TRACKER1_IMU},
+-			 {.num = 0x83, .name = "Lightcap", .type = USB_IF_TRACKER1_LIGHTCAP},
+-			 {.num = 0x84, .name = "Buttons", .type = USB_IF_TRACKER1_BUTTONS},
+-		 },
+-	 .magics = {MAGIC_CTOR(true, vive_magic_enable_lighthouse), MAGIC_CTOR(true, vive_magic_enable_lighthouse_more)}},
++	//{.vid = 0x28de,
++	// .pid = 0x2300,
++	// .type = USB_DEV_TRACKER1,
++	// .name = "Tracker (2018)",
++	// .codename = "T20",
++	// .endpoints =
++	//	 {
++	//		 {.num = 0x81, .name = "IMU", .type = USB_IF_TRACKER1_IMU},
++	//		 {.num = 0x83, .name = "Lightcap", .type = USB_IF_TRACKER1_LIGHTCAP},
++	//		 {.num = 0x84, .name = "Buttons", .type = USB_IF_TRACKER1_BUTTONS},
++	//	 },
++	// .magics = {MAGIC_CTOR(true, vive_magic_enable_lighthouse), MAGIC_CTOR(true, vive_magic_enable_lighthouse_more)}},
+ 	{.vid = 0x28de,
+ 	 .pid = 0x2012,
+ 	 .type = USB_DEV_W_WATCHMAN1,
+diff --git a/src/survive_default_devices.c b/src/survive_default_devices.c
+index 68a4dc3..719647b 100644
+--- a/src/survive_default_devices.c
++++ b/src/survive_default_devices.c
+@@ -309,6 +309,7 @@ struct model_number_metadata model_number_subtypes[] = {
+ 	{"Tundra Tracker", SURVIVE_OBJECT_SUBTYPE_TRACKER_GEN2, 1.},
+ 	{"VIVE_Pro 2 MV", SURVIVE_OBJECT_TYPE_HMD, 1.},
+ 	{"VIVE Controller Pro MV", SURVIVE_OBJECT_SUBTYPE_WAND, 1.},
++	{"Beyond", SURVIVE_OBJECT_SUBTYPE_VIVE_HMD, 1.},
+ };
+ 
+ static int process_jsontok(scratch_space_t *scratch, char *d, stack_entry_t *stack, jsmntok_t *t, int count) {

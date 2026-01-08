@@ -55,10 +55,7 @@
   # Select a kernel
   #boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
   #boot.kernelPackages = pkgs.linuxPackages_zen;
-  #boot.kernelPackages = pkgs.linuxPackages_latest;
-
-  services.lm_sensors.enable = true;
-  services.auto-cpufreq.enable = true;
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   boot.initrd.kernelModules = [ "amdgpu" ];
 

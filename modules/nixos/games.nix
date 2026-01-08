@@ -10,7 +10,19 @@ in
 
     programs.steam = {
       enable = true;
-      # package = pkgs.steamPackages.steam;
+      package = pkgs.steam.override {
+        # force proton to use wayland
+        #export PROTON_ENABLE_WAYLAND=1
+        # FIXME: This allowes xrizer & opencomposite to work without something in home
+        #export XR_RUNTIME_JSON=${config.services.monado.package}/share/openxr/1/openxr_monado.json
+        extraProfile = ''
+          # fixes timezones on vrchat
+          unset TZ
+          # allows monado to be used
+          export PRESSURE_VESSEL_FILESYSTEMS_RW=$XDG_RUNTIME_DIR/monado_comp_ipc
+        '';
+      };
+
       remotePlay.openFirewall = true;
       localNetworkGameTransfers.openFirewall = true;
       extraCompatPackages = with pkgs; [

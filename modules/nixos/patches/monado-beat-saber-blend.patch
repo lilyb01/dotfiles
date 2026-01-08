@@ -1,0 +1,13 @@
+diff --git a/src/xrt/compositor/shaders/layer.comp b/src/xrt/compositor/shaders/layer.comp
+index ead30cac4..4c83a4a93 100644
+--- a/src/xrt/compositor/shaders/layer.comp
++++ b/src/xrt/compositor/shaders/layer.comp
+@@ -490,6 +490,8 @@ vec4 do_layers(vec2 view_uv)
+ 		default: break;
+ 		}
+ 
++		if (layer == 0)
++			accum.rgb = rgba.rgb;
+ 		if (ubo.layer_data[layer].unpremultiplied_alpha != 0) {
+ 			// Unpremultipled blend factor of src.a.
+ 			accum.rgb = mix(accum.rgb, rgba.rgb, rgba.a);

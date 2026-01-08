@@ -72,6 +72,14 @@
     # declarative flatpak
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=v0.4.1";
 
+    # vr
+    nixpkgs-xr.url = "github:nix-community/nixpkgs-xr";
+
+    xrizer = {
+      url = "github:ImSapphire/xrizer/next";
+      flake = false;
+    };
+
     #chaotic.url = "github:chaotic-cx/nyx/nyxpkgs-unstable";
     #jovian.url = "github:Jovian-Experiments/Jovian-NixOS";
     #jovian.follows = "chaotic/jovian";

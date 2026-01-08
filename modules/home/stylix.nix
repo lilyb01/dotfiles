@@ -7,6 +7,12 @@
 
             base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
 
+            cursor = {
+                package = pkgs.apple-cursor;
+                name = "macOS";
+                size = 24;
+            };
+
             fonts = {
                 serif = {
                     package = pkgs.dejavu_fonts;

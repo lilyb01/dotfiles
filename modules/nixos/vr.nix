@@ -9,8 +9,8 @@
         #src = inputs.monado;
 
         patches = [
-          ./patches/monado-shutdown-ipc-server-on-SIGTERM.diff
-          ./patches/monado-beat-saber-blend.patch
+          "${../../patches/monado-shutdown-ipc-server-on-SIGTERM.diff}"
+          "${../../patches/monado-beat-saber-blend.patch}"
           # ./patches/monado-bsb-survive.patch
         ];
       });
@@ -20,11 +20,11 @@
   boot.kernelPatches = [
     {
       name = "drm/edid: parse DRM VESA dsc bpp target";
-      patch = ./patches/0001-drm-edid-parse-DRM-VESA-dsc-bpp-target.patch;
+      patch = "${../../patches/0001-drm-edid-parse-DRM-VESA-dsc-bpp-target.patch}";
     }
     {
       name = "drm/amd: use fixed dsc bits-per-pixel from edid";
-      patch = ./patches/0002-drm-amd-use-fixed-dsc-bits-per-pixel-from-edid.patch;
+      patch = "${../../patches/0002-drm-amd-use-fixed-dsc-bits-per-pixel-from-edid.patch}";
     }
   ];
   services.udev.extraRules = ''

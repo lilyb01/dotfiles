@@ -2,6 +2,7 @@
 # Use this to configure your system environment (it replaces /etc/nixos/configuration.nix)
 {
   inputs,
+  pkgs,
   ...
 }: {
 
@@ -50,6 +51,14 @@
     trusted-substituters = ["https://hyprland.cachix.org"];
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
+
+  # Select a kernel
+  #boot.kernelPackages = pkgs.linuxKernel.packages.linux_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_zen;
+  #boot.kernelPackages = pkgs.linuxPackages_latest;
+
+  services.lm_sensors.enable = true;
+  services.auto-cpufreq.enable = true;
 
   boot.initrd.kernelModules = [ "amdgpu" ];
 

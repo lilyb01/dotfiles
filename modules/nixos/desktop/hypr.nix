@@ -17,6 +17,9 @@ in
       hyprpicker
       hypridle
 
+      gparted
+      xarchiver
+
       kdePackages.qt6ct
       kdePackages.qtmultimedia
       kdePackages.kirigami.unwrapped

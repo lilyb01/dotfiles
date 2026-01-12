@@ -20,6 +20,7 @@ in {
       "disk"
       "wheel"
       "networkmanager"
+      "plugdev"
     ];
     isNormalUser = true;
     openssh.authorizedKeys.keys = [

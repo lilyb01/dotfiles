@@ -41,6 +41,7 @@ in
       prismlauncher
       steam-run
       r2modman
+      alcom
     ];
 
     nixpkgs.config.allowUnfreePredicate = pkg: lib.elem (lib.getName pkg) [

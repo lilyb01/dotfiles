@@ -6,9 +6,8 @@
 #    inputs.nixpkgs-xr.nixosModules.nixpkgs-xr
     ./patching/vr.nix
   ];
-  home-manager.users.jay = import ./home_manager/vr.nix;
 
-  users.users.jay = {
+  users.users.lily = {
     packages = with pkgs; [
       v4l-utils # cameras
       xrgears # testing, just in case

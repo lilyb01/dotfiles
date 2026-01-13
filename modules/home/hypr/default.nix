@@ -371,19 +371,19 @@
 
       windowrule = [
         # smart gaps
-        "bordersize 0, floating:0, onworkspace:w[tv1]"
-        "rounding 0, floating:0, onworkspace:w[tv1]"
-        "bordersize 0, floating:0, onworkspace:f[1]"
-        "rounding 0, floating:0, onworkspace:f[1]"
+        "border_size 0, match:float 0, match:workspace w[tv1]"
+        "rounding 0, match:float 0, match:workspace w[tv1]"
+        "border_size 0, match:float 0, match:workspace f[1]"
+        "rounding 0, match:float 0, match:workspace f[1]"
 
         # Example windowrule
         # "float,class:^(kitty)$,title:^(kitty)$"
 
         # Ignore maximize requests from apps. You'll probably like this.
-        "suppressevent maximize, class:.*"
+        "match:class .*, suppress_event maximize"
 
         # Fix some dragging issues with XWayland
-        "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
+        "match:class ^$, match:title ^$, match:xwayland true, match:float true, match:fullscreen false, match:pin false, no_focus on"
       ];
     };
   };

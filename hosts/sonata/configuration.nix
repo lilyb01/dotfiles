@@ -37,19 +37,25 @@
 
   # You can import other NixOS modules here
   imports = with inputs.hardware.nixosModules; [
-    common-cpu-amd
-    common-cpu-amd-pstate
-    common-cpu-amd-zenpower
-    common-gpu-amd
-    common-pc-ssd
+    framework-16-amd-ai-300-series-nvidia
     ./hardware-configuration.nix
   ];
+
+  hardware.nvidia.prime = {
+    amdgpuBusId = "PCI:195:0:0";
+    nvidiaBusId = "PCI:194:0:0";
+  };
 
   nix.settings = {
     substituters = ["https://hyprland.cachix.org"];
     trusted-substituters = ["https://hyprland.cachix.org"];
     trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
+
+  networking.networkmanager.enable = true;
+
+  services.power-profiles-daemon.enable = true;
+  services.upower.enable = true;
 
   boot.initrd.kernelModules = [ "amdgpu" ];
 

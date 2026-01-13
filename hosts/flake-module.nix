@@ -116,7 +116,7 @@ in
     # NixOS configurations
     nixosConfigurations = builtins.mapAttrs mkSystem {
       cantata = { system = "x86_64-linux"; modules = [./cantata/disko-config.nix inputs.nixpkgs-xr.nixosModules.nixpkgs-xr]; };
-      #sonata = { system = "aarch64-linux"; };
+      sonata = { system = "x86_64-linux"; modules = [./sonata/disko-config.nix]; };
       maggie = { system = "x86_64-linux"; };
       tapioca = { system = "x86_64-linux"; modules = [./tapioca/disko-config.nix]; }; #version = "nixpkgs"; hmversion="home-manager";
       hopscotch = { system = "x86_64-linux";};

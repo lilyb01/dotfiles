@@ -9,6 +9,7 @@
            "com.plexamp.Plexamp.desktop"
            "obsidian.desktop"
            "code.desktop"
+           "org.codeberg.dnkl.foot.desktop"
            "vesktop.desktop"
            "org.telegram.desktop.desktop" 
         ];
@@ -32,15 +33,6 @@
           notification-banner-reloaded
           status-area-horizontal-spacing
         ];
-        internet.extras = with pkgs; [
-          ungoogled-chromium
-          weechat
-          vesktop
-          telegram-desktop
-          nicotine-plus
-          warpinator
-          tigervnc
-        ];
     };
 
       home.file."wallpaper.jpg" = {
@@ -55,14 +47,6 @@
       home.file."lockscreen-dark.jpg" = {
         source = ../../wallpaper/lockscreen-dark.jpg;
       }; 
-
-    nixpkgs = {
-      config = {
-        allowUnfree = true;
-        allowUnfreePredicate = (_: true);
-        allowUnsupportedSystem = true;
-      };
-    };
 
     home.stateVersion = "24.05";
 }

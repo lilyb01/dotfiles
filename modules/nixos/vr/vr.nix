@@ -100,7 +100,7 @@
     #}
     {
       name = "bsb support";
-      patch = "${./patching/bigscreen-beyond-kernel.patch}";
+      patch = "${./patching/beyondKernel.patch}";
     }
   ];
 

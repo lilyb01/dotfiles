@@ -93,14 +93,14 @@
     #  name = "drm/amd: use fixed dsc bits-per-pixel from edid";
     #  patch = "${../../patches/0002-drm-amd-use-fixed-dsc-bits-per-pixel-from-edid.patch}";
     #}
-    {
-      name = "allow any ctx priority on amdgpu";
-      # See https://github.com/Frogging-Family/community-patches/blob/a6a468420c0df18d51342ac6864ecd3f99f7011e/linux61-tkg/cap_sys_nice_begone.mypatch
-      patch = "${../../patches/cap_sys_nice_begone.patch}";
-    }
+    #{
+    #  name = "allow any ctx priority on amdgpu";
+    #  # See https://github.com/Frogging-Family/community-patches/blob/a6a468420c0df18d51342ac6864ecd3f99f7011e/linux61-tkg/cap_sys_nice_begone.mypatch
+    #  patch = "${./patching/cap_sys_nice_begone.patch}";
+    #}
     {
       name = "bsb support";
-      patch = "${../../patches/bigscreen-beyond-kernel.patch}";
+      patch = "${./patching/bigscreen-beyond-kernel.patch}";
     }
   ];
 

@@ -84,6 +84,26 @@
     };
   };
 
+  boot.kernelPatches = [
+    #{
+    #  name = "drm/edid: parse DRM VESA dsc bpp target";
+    #  patch = "${../../patches/0001-drm-edid-parse-DRM-VESA-dsc-bpp-target.patch}";
+    #}
+    #{
+    #  name = "drm/amd: use fixed dsc bits-per-pixel from edid";
+    #  patch = "${../../patches/0002-drm-amd-use-fixed-dsc-bits-per-pixel-from-edid.patch}";
+    #}
+    {
+      name = "allow any ctx priority on amdgpu";
+      # See https://github.com/Frogging-Family/community-patches/blob/a6a468420c0df18d51342ac6864ecd3f99f7011e/linux61-tkg/cap_sys_nice_begone.mypatch
+      patch = "${../../patches/cap_sys_nice_begone.patch}";
+    }
+    {
+      name = "bsb support";
+      patch = "${../../patches/bigscreen-beyond-kernel.patch}";
+    }
+  ];
+
   services.udev.extraRules = ''
     # Bigscreen Beyond
     KERNEL=="hidraw*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="35bd", ATTRS{idProduct}=="0101", MODE="0660", TAG+="uaccess", GROUP="video"

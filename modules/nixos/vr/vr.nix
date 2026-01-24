@@ -18,11 +18,10 @@
       # outoftree.pkgs.${pkgs.system}.xrizer
       motoc
       # index_camera_passthrough
-      wlx-overlay-s
+      wayvr
       # wlx-overlay-s_patched
       # outoftree.pkgs.${pkgs.system}.wlx-overlay-s
       libsurvive
-      wayvr-dashboard
       # outoftree.pkgs.${pkgs.system}.wayvr-dashboard
       # outoftree.pkgs.${pkgs.system}.vrcadvert
       # oscavmgr
@@ -33,8 +32,8 @@
 
       steamcmd # For BSB
       # BSB2e
-      # outoftree.pkgs.${pkgs.system}.go-bsb-cams
-      # outoftree.pkgs.${pkgs.system}.baballonia
+      # go-bsb-cams
+      # baballonia
     ];
   };
 
@@ -43,6 +42,7 @@
       enable = true;
       defaultRuntime = true; # Register as default OpenXR runtime
       package = pkgs.monado;
+      highPriority = true;
     };
 
   };
@@ -70,10 +70,10 @@
     };
 
     wlx-overlay-s = {
-      description = "VR wlx-overlay-s";
-      path = [ pkgs.wayvr-dashboard ];
+      description = "WayVR";
+      path = [ pkgs.wayvr ];
       serviceConfig = {
-        ExecStart = "${pkgs.wlx-overlay-s}/bin/wlx-overlay-s";
+        ExecStart = "${pkgs.wayvr}/bin/wayvr";
         Restart = "on-abnormal";
       };
       bindsTo = [ "monado.service" ];

@@ -5,7 +5,6 @@
         enable = true;
         enableAudioWavelength = true;
         enableCalendarEvents = true;
-        enableClipboard = true;
         enableDynamicTheming = true;
         enableSystemMonitoring = true;
         enableVPN = true;
